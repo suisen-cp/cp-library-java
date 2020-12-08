@@ -1,0 +1,1018 @@
+{
+    "lib.algebra.ringlike.Ringoid" : [
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.util.pair.LongPair" : [
+        "java.util.Objects"
+    ],
+    "lib.util.itertools.CombinationsWithReplacement" : [
+        "java.util.Arrays",
+        "java.util.Iterator"
+    ],
+    "lib.util.pair.IntPair3" : [
+        "java.util.Objects"
+    ],
+    "lib.algorithm.InversionNumber" : [
+        "java.util.stream.IntStream",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.Collection",
+        "java.util.function.IntBinaryOperator",
+        "java.util.HashMap",
+        "java.util.OptionalInt",
+        "java.util.function.IntPredicate",
+        "java.util.HashSet",
+        "java.util.function.IntToLongFunction",
+        "java.util.function.LongUnaryOperator",
+        "java.util.function.LongPredicate"
+    ],
+    "lib.util.Doubles" : [
+        "java.math.BigDecimal",
+        "java.util.function.DoubleBinaryOperator",
+        "java.math.RoundingMode"
+    ],
+    "lib.algorithm.longs.LongCompress" : [
+        "java.util.HashSet",
+        "java.util.Arrays",
+        "java.util.function.IntToLongFunction",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.function.LongUnaryOperator",
+        "java.util.Collection",
+        "java.util.function.IntBinaryOperator",
+        "java.util.HashMap",
+        "java.util.function.LongPredicate",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.util.sort.IndexSort" : [
+        "java.util.Arrays",
+        "java.util.function.IntUnaryOperator",
+        "java.util.Comparator"
+    ],
+    "lib.util.function.IntObjConsumer" : [
+        "java.util.function.Consumer"
+    ],
+    "lib.util.collections.longs.LongArrayList" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator"
+    ],
+    "lib.util.function.IntBiPredicate" : [
+        "java.util.function.LongPredicate",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.util.pair.DoublePair" : [
+        "java.util.Objects"
+    ],
+    "lib.datastructure.CommutativeDualSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.BiFunction",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.persistent.PersistentIntStack" : [
+        "java.util.PrimitiveIterator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.collections.longs.LongPriorityQueue" : [
+        "java.util.OptionalLong",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.math.number.ModPolynomialFactory" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays",
+        "java.util.Optional"
+    ],
+    "lib.persistent.PersistentUnionFindWithInfo" : [
+        "java.util.RandomAccess",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.NoSuchElementException",
+        "java.util.function.BinaryOperator",
+        "java.util.function.IntFunction"
+    ],
+    "lib.math.number.ConvolutionNTTPrime" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.RangeOrderedSet" : [
+        "java.util.PrimitiveIterator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.math.MathUtil" : [
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.util.Iterator",
+        "java.util.Map",
+        "java.util.function.BiFunction",
+        "java.util.function.BiConsumer",
+        "java.util.HashMap",
+        "java.util.function.BinaryOperator",
+        "java.util.ArrayList",
+        "java.util.function.LongConsumer"
+    ],
+    "lib.util.function.LongBiPredicate" : [
+        "java.util.function.LongPredicate"
+    ],
+    "lib.util.BitUtil" : [
+        "java.util.Arrays"
+    ],
+    "lib.util.collections.DoubleDeque" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.itertools.Combinations" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator"
+    ],
+    "lib.datastructure.DSUSequence" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.ArrayList"
+    ],
+    "lib.tree.Forest" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.ints.IntWaveletMatrix" : [
+        "java.io.PrintStream",
+        "java.util.Objects",
+        "java.util.Arrays",
+        "java.util.HashMap",
+        "java.math.BigInteger",
+        "java.util.BitSet"
+    ],
+    "lib.util.Ints" : [
+        "java.util.function.IntBinaryOperator"
+    ],
+    "lib.algebra.grouplike.AbelianGroup" : [
+        "java.util.Objects",
+        "java.util.function.BiFunction",
+        "java.util.function.UnaryOperator",
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.linear.IntRingMatrixFactory" : [
+        "java.util.Objects",
+        "java.util.Arrays",
+        "java.util.function.IntUnaryOperator",
+        "java.util.function.IntBinaryOperator"
+    ],
+    "lib.geom.Complex" : [
+        "java.util.Comparator",
+        "java.io.Serializable"
+    ],
+    "lib.io.FastScanner2" : [
+        "java.util.Objects",
+        "java.util.Arrays",
+        "java.util.function.IntToDoubleFunction",
+        "java.util.function.IntToLongFunction",
+        "java.util.function.IntUnaryOperator",
+        "java.io.IOException",
+        "java.util.NoSuchElementException",
+        "java.io.InputStream",
+        "java.util.function.IntFunction"
+    ],
+    "lib.persistent.PersistentArray" : [
+        "java.util.RandomAccess",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
+    ],
+    "lib.util.function.IntToLongBiFunction" : [
+        "java.util.function.IntToLongFunction"
+    ],
+    "lib.datastructure.LazySegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.Predicate",
+        "java.util.function.BiFunction",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.graph.BellmanFord" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.ArrayList"
+    ],
+    "lib.util.collections.ints.IntTreeSet" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException",
+        "java.util.OptionalInt",
+        "java.util.ConcurrentModificationException"
+    ],
+    "lib.util.ObjectUtils" : [
+        "java.util.Comparator"
+    ],
+    "lib.datastructure.longs.LongWaveletMatrixBuilder" : [
+        "java.util.HashMap",
+        "java.math.BigInteger",
+        "java.util.BitSet"
+    ],
+    "lib.linear.ModMatrixFactory" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.DisjointSetUnionWithInfo" : [
+        "java.util.Arrays",
+        "java.util.function.BinaryOperator",
+        "java.util.function.IntFunction"
+    ],
+    "lib.graph.BipartiteMatching" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.ToIntFunction",
+        "java.util.Comparator",
+        "java.util.ArrayList"
+    ],
+    "lib.algorithm.ints.IntSWAG" : [
+        "java.util.function.IntBinaryOperator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.pair.Pair" : [
+        "java.util.Objects"
+    ],
+    "lib.graph.BCC" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.ArrayList"
+    ],
+    "lib.graph.Dijkstra2" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.string.RollingHashFactory" : [
+        "java.util.Random"
+    ],
+    "lib.datastructure.ints.IntLazySegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.IntBinaryOperator",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.util.function.LongBiConsumer" : [
+        "java.util.function.LongConsumer"
+    ],
+    "lib.util.function.LongIntToLongFunction" : [
+        "java.util.function.IntToLongFunction"
+    ],
+    "lib.algebra.ringlike.BoundedLattice" : [
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.algebra.ringlike.CommutativeRing" : [
+        "java.util.function.UnaryOperator",
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.io.ExtendedScanner" : [
+        "java.io.UncheckedIOException",
+        "java.util.Arrays",
+        "java.util.function.IntToDoubleFunction",
+        "java.util.function.IntToLongFunction",
+        "java.util.function.IntUnaryOperator",
+        "java.util.function.LongUnaryOperator",
+        "java.io.FileDescriptor",
+        "java.io.IOException",
+        "java.io.FileInputStream",
+        "java.io.EOFException",
+        "java.io.InputStream",
+        "java.util.function.IntFunction"
+    ],
+    "lib.geom.ClosestPair" : [
+        "java.util.Objects",
+        "java.util.Arrays",
+        "java.util.Comparator",
+        "java.io.Serializable"
+    ],
+    "lib.algorithm.longs.LongLIS" : [
+        "java.util.Arrays"
+    ],
+    "lib.algorithm.longs.LongArraySWAG" : [
+        "java.util.function.LongBinaryOperator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.itertools.ExtendedPrimitiveIterator" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Objects",
+        "java.util.function.Consumer"
+    ],
+    "lib.graph.LowLink" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntPredicate",
+        "java.util.ArrayList"
+    ],
+    "lib.datastructure.ints.IntCommutativeDualSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.IntBinaryOperator"
+    ],
+    "lib.math.number.ConvolutionBitOps" : [
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongUnaryOperator"
+    ],
+    "lib.datastructure.DSUForest" : [
+        "java.util.Arrays",
+        "java.util.function.IntUnaryOperator"
+    ],
+    "lib.util.pair.IntEntry" : [
+        "java.util.Objects"
+    ],
+    "lib.math.Rational" : [
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.util.Iterator",
+        "java.util.Map",
+        "java.util.function.BiFunction",
+        "java.util.function.BiConsumer",
+        "java.util.HashMap",
+        "java.util.function.BinaryOperator",
+        "java.util.ArrayList",
+        "java.util.function.LongConsumer"
+    ],
+    "lib.util.sort.ints.BucketSort" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.longs.LongWaveletMatrix" : [
+        "java.util.HashMap"
+    ],
+    "lib.datastructure.BitVectorBuilder" : [
+        "java.math.BigInteger",
+        "java.util.BitSet"
+    ],
+    "lib.algorithm.ints.IntCompress" : [
+        "java.util.HashSet",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.Collection",
+        "java.util.function.IntBinaryOperator",
+        "java.util.HashMap",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.math.number.Combination" : [
+        "java.util.Objects",
+        "java.util.OptionalLong",
+        "java.util.Arrays",
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongPredicate"
+    ],
+    "lib.persistent.PersistentSegmentTree" : [
+        "java.util.function.UnaryOperator",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.math.PolynomialSquareRoot" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays",
+        "java.util.Optional",
+        "java.util.OptionalInt"
+    ],
+    "lib.util.itertools.Product" : [
+        "java.util.Arrays",
+        "java.util.Iterator"
+    ],
+    "lib.datastructure.DualSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.BiFunction",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.datastructure.longs.LongRangeAffineRangeSum" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.longs.LongSparseTable" : [
+        "java.util.function.LongBinaryOperator"
+    ],
+    "lib.graph.Kruskal" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays",
+        "java.util.PriorityQueue",
+        "java.util.Collection",
+        "java.util.ArrayList"
+    ],
+    "lib.io.FastScanner" : [
+        "java.io.UncheckedIOException",
+        "java.io.FileDescriptor",
+        "java.io.IOException",
+        "java.io.FileInputStream",
+        "java.io.EOFException",
+        "java.io.InputStream"
+    ],
+    "lib.datastructure.longs.LongOrderedSet" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Objects",
+        "java.util.OptionalLong",
+        "java.util.Iterator",
+        "java.util.Collection",
+        "java.util.Optional",
+        "java.util.Set",
+        "java.util.ArrayDeque",
+        "java.util.LinkedHashSet",
+        "java.util.ArrayList"
+    ],
+    "lib.linear.LongRingMatrixFactory" : [
+        "java.util.Objects",
+        "java.util.Arrays",
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongUnaryOperator"
+    ],
+    "lib.string.SuffixArray" : [
+        "java.util.function.Consumer",
+        "java.util.Arrays",
+        "java.util.function.IntBinaryOperator"
+    ],
+    "lib.datastructure.ints.DisjointSetUnionWithIntInfo" : [
+        "java.util.Arrays",
+        "java.util.function.IntUnaryOperator",
+        "java.util.function.IntBinaryOperator"
+    ],
+    "lib.datastructure.longs.DisjointSetUnionWithLongInfo" : [
+        "java.util.Arrays",
+        "java.util.function.IntToLongFunction",
+        "java.util.function.LongBinaryOperator"
+    ],
+    "lib.graph.AbstractGraph" : [
+        "java.util.ArrayList"
+    ],
+    "lib.algebra.grouplike.Monoid" : [
+        "java.util.Objects",
+        "java.util.function.BiFunction",
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.graph.MinCostFlow" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.PriorityQueue",
+        "java.util.ArrayList"
+    ],
+    "lib.io.FastPrintStream" : [
+        "java.io.OutputStream",
+        "java.nio.charset.CharacterCodingException",
+        "java.nio.CharBuffer",
+        "java.io.FileOutputStream",
+        "java.io.IOException",
+        "java.lang.reflect.Field",
+        "java.io.File",
+        "java.nio.ByteBuffer",
+        "java.nio.charset.StandardCharsets",
+        "java.io.UncheckedIOException",
+        "java.nio.charset.Charset",
+        "java.nio.charset.CharsetEncoder",
+        "java.io.FileDescriptor"
+    ],
+    "lib.algorithm.ints.IntLIS" : [
+        "java.util.Arrays"
+    ],
+    "lib.util.collections.ints.IntDeque" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.NoSuchElementException",
+        "java.util.OptionalInt"
+    ],
+    "lib.graph.Digraph" : [
+        "java.util.ArrayList"
+    ],
+    "lib.tree.Tree" : [
+        "java.util.Arrays"
+    ],
+    "lib.algebra.ringlike.SemiRing" : [
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.graph.SCC" : [
+        "java.util.Arrays",
+        "java.util.ArrayList"
+    ],
+    "lib.graph.MaxFlow" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.ArrayList"
+    ],
+    "lib.datastructure.longs.LongRadixHeap" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.array.DoubleArrayFactory" : [
+        "java.util.Arrays",
+        "java.util.function.IntToDoubleFunction",
+        "java.util.function.DoubleUnaryOperator"
+    ],
+    "lib.util.ext_std.MapUtil" : [
+        "java.util.Map",
+        "java.util.function.BiFunction",
+        "java.util.function.BiConsumer",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.algorithm.ArraySWAG" : [
+        "java.util.NoSuchElementException",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.datastructure.SegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.Predicate",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.util.Tuple" : [
+        "java.util.Objects"
+    ],
+    "lib.util.array.ObjArrays" : [
+        "java.util.Arrays",
+        "java.util.function.UnaryOperator",
+        "java.util.Comparator",
+        "java.util.function.BinaryOperator",
+        "java.util.function.IntFunction"
+    ],
+    "lib.tree.HLD" : [
+        "java.util.Arrays",
+        "java.util.function.IntConsumer"
+    ],
+    "lib.math.number.Combinatrics" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays",
+        "java.util.Optional"
+    ],
+    "lib.persistent.PersistentIntArray" : [
+        "java.util.RandomAccess",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
+    ],
+    "lib.tree.Diameter" : [
+        "java.util.Arrays"
+    ],
+    "lib.util.collections.ints.IntListIterator" : [
+        "java.util.function.Consumer",
+        "java.util.ListIterator",
+        "java.util.function.IntConsumer"
+    ],
+    "lib.geom.light.LComplex" : [
+        "java.util.Comparator",
+        "java.util.function.ToLongFunction",
+        "java.io.Serializable"
+    ],
+    "lib.datastructure.ints.IntOrderedSet" : [
+        "java.io.PrintStream",
+        "java.util.Objects",
+        "java.util.TreeSet"
+    ],
+    "lib.util.collections.ints.IntArrayList" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.algebra.ringlike.Field" : [
+        "java.util.function.UnaryOperator",
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.util.pair.LongPair3" : [
+        "java.util.Objects"
+    ],
+    "lib.datastructure.longs.LongSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongPredicate"
+    ],
+    "lib.geom.light.LGeometry" : [
+        "java.util.Arrays",
+        "java.util.Comparator",
+        "java.util.function.ToLongFunction",
+        "java.io.Serializable"
+    ],
+    "lib.math.number.ConvolutionGCD" : [
+        "java.util.OptionalLong",
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongUnaryOperator"
+    ],
+    "lib.datastructure.ints.IntDualSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.IntBinaryOperator"
+    ],
+    "lib.util.collections.ints.IntLinkedList" : [
+        "java.util.PrimitiveIterator",
+        "java.util.function.Consumer",
+        "java.util.ListIterator",
+        "java.util.function.IntConsumer",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.graph.AdjacentList" : [
+        "java.util.Iterator"
+    ],
+    "lib.util.Longs" : [
+        "java.util.function.LongBinaryOperator"
+    ],
+    "lib.algebra.grouplike.SemiLattice" : [
+        "java.util.Objects",
+        "java.util.function.BiFunction",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.util.array.LongArrayFactory" : [
+        "java.util.HashSet",
+        "java.util.Arrays",
+        "java.util.function.IntToLongFunction",
+        "java.util.Iterator",
+        "java.util.function.LongUnaryOperator",
+        "java.util.Collection",
+        "java.util.function.LongPredicate"
+    ],
+    "lib.util.array.CharArrays" : [
+        "java.util.Arrays",
+        "java.util.function.IntFunction"
+    ],
+    "lib.datastructure.ints.IntRadixHeap" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.datastructure.ints.IntRadixHeapMap" : [
+        "java.lang.reflect.Array",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.persistent.PersistentLongArray" : [
+        "java.util.RandomAccess",
+        "java.util.Arrays",
+        "java.util.function.IntToLongFunction",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
+    ],
+    "lib.datastructure.ModRangeAffineRangeSum" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays"
+    ],
+    "lib.graph.TopologicalSort" : [
+        "java.util.Iterator",
+        "java.util.ArrayList"
+    ],
+    "lib.algorithm.SWAG" : [
+        "java.util.NoSuchElementException",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.datastructure.ints.IntSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.IntBinaryOperator",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.persistent.PersistentLongSegmentTree" : [
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongUnaryOperator"
+    ],
+    "lib.tree.TreeUtil" : [
+        "java.util.Arrays"
+    ],
+    "lib.graph.Graph" : [
+        "java.util.ArrayList"
+    ],
+    "lib.tree.MergeTreeFoldPath" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.function.IntConsumer",
+        "java.util.function.IntBinaryOperator",
+        "java.util.NoSuchElementException",
+        "java.util.OptionalInt",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.algebra.ringlike.Lattice" : [
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.util.function.IntBiConsumer" : [
+        "java.util.function.IntConsumer"
+    ],
+    "lib.math.number.Garner" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays"
+    ],
+    "lib.util.collections.ints.IntTreeMap" : [
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException",
+        "java.util.ConcurrentModificationException"
+    ],
+    "lib.geom.ConvexHull" : [
+        "java.util.HashSet",
+        "java.util.Arrays",
+        "java.util.Comparator",
+        "java.io.Serializable"
+    ],
+    "lib.util.itertools.Permutation" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator"
+    ],
+    "lib.tree.EulerTour" : [
+        "java.util.Arrays"
+    ],
+    "lib.persistent.PartiallyPersistentUnionFind" : [
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException",
+        "java.util.ConcurrentModificationException"
+    ],
+    "lib.datastructure.longs.LongOrderedMultiSet" : [
+        "java.util.Objects",
+        "java.util.OptionalLong"
+    ],
+    "lib.util.pair.IntLongPair" : [
+        "java.util.Objects"
+    ],
+    "lib.algorithm.ints.IntXorBases" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.util.collections.CharDeque" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.collections.longs.LongDeque" : [
+        "java.util.PrimitiveIterator",
+        "java.util.OptionalLong",
+        "java.util.Arrays",
+        "java.util.function.IntToLongFunction",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.array.IntArrayFactory" : [
+        "java.util.HashSet",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.util.Collection",
+        "java.util.function.IntBinaryOperator",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.algorithm.TwoSAT" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.DisjointSetUnion" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.longs.LongDualSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.LongBinaryOperator"
+    ],
+    "lib.io.InputVerifier" : [
+        "java.util.Objects",
+        "java.util.regex.Matcher",
+        "java.io.IOException",
+        "java.util.regex.Pattern",
+        "java.io.InputStream"
+    ],
+    "lib.tree.ForestBuilder" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.ints.IntWaveletMatrixBuilder" : [
+        "java.io.PrintStream",
+        "java.util.Objects",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.Map",
+        "java.util.Set",
+        "java.util.HashMap",
+        "java.math.BigInteger",
+        "java.util.BitSet"
+    ],
+    "lib.datastructure.OrderedSet" : [
+        "java.util.Comparator"
+    ],
+    "lib.util.function.IntLongToLongFunction" : [
+        "java.util.function.LongUnaryOperator"
+    ],
+    "lib.util.pair.LongEntry" : [
+        "java.util.Objects"
+    ],
+    "lib.geom.Geometry" : [
+        "java.util.Arrays",
+        "java.util.Comparator",
+        "java.io.Serializable"
+    ],
+    "lib.util.Range" : [
+        "java.util.Objects",
+        "java.util.Iterator",
+        "java.util.Comparator",
+        "java.util.LinkedList",
+        "java.util.function.ToLongFunction"
+    ],
+    "lib.math.number.ModArithmetic" : [
+        "java.util.OptionalLong"
+    ],
+    "lib.algorithm.longs.LongSWAG" : [
+        "java.util.function.LongBinaryOperator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.IterableIterator" : [
+        "java.util.Iterator"
+    ],
+    "lib.datastructure.longs.LongRangeAddRangeGCD" : [
+        "java.util.Arrays"
+    ],
+    "lib.util.array.CharArrayFactory" : [
+        "java.util.Collection"
+    ],
+    "lib.datastructure.longs.LongObjLazySegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongPredicate",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.graph.GraphUtil" : [
+        "java.util.Arrays",
+        "java.util.ArrayList"
+    ],
+    "lib.datastructure.ints.IntRangeAffineRangeSum" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.longs.LongCommutativeDualSegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.LongBinaryOperator"
+    ],
+    "lib.algebra.grouplike.BoundedSemiLattice" : [
+        "java.util.Objects",
+        "java.util.function.BiFunction",
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.util.IDManager" : [
+        "java.util.HashMap",
+        "java.util.OptionalInt"
+    ],
+    "lib.util.array.DoubleArrays" : [
+        "java.util.Arrays",
+        "java.util.function.DoubleBinaryOperator",
+        "java.util.function.IntToDoubleFunction",
+        "java.util.function.DoublePredicate",
+        "java.util.function.DoubleUnaryOperator",
+        "java.util.function.IntFunction"
+    ],
+    "lib.util.array.ObjArrayFactory" : [
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.function.IntFunction"
+    ],
+    "lib.datastructure.ints.IntObjLazySegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.IntBinaryOperator",
+        "java.util.function.IntPredicate",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.graph.Prim" : [
+        "java.util.OptionalLong",
+        "java.util.Iterator",
+        "java.util.PriorityQueue",
+        "java.util.Collection",
+        "java.util.ArrayList"
+    ],
+    "lib.algorithm.Doubling" : [
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongPredicate",
+        "java.util.function.IntPredicate"
+    ],
+    "lib.algebra.grouplike.SemiGroup" : [
+        "java.util.Objects",
+        "java.util.function.BiFunction",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.graph.GridUtil" : [
+        "java.util.Arrays"
+    ],
+    "lib.datastructure.longs.LongRadixHeapMap" : [
+        "java.lang.reflect.Array",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.util.collections.ints.IntPriorityQueue" : [
+        "java.util.NoSuchElementException",
+        "java.util.OptionalInt"
+    ],
+    "lib.datastructure.longs.LongOrderedMap" : [
+        "java.util.Objects",
+        "java.util.PrimitiveIterator",
+        "java.util.Iterator",
+        "java.util.Collection",
+        "java.util.Optional",
+        "java.util.Set",
+        "java.util.ArrayDeque",
+        "java.util.LinkedHashSet",
+        "java.util.ArrayList"
+    ],
+    "lib.math.number.ModFactorial" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays"
+    ],
+    "lib.graph.Dijkstra" : [
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.PriorityQueue",
+        "java.util.ArrayList"
+    ],
+    "lib.tree.EulerTourLCA" : [
+        "java.util.Arrays"
+    ],
+    "lib.util.collections.Deque" : [
+        "java.util.RandomAccess",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
+    ],
+    "lib.algorithm.longs.LongXorBases" : [
+        "java.util.PrimitiveIterator",
+        "java.util.Arrays",
+        "java.util.Iterator"
+    ],
+    "lib.algorithm.ints.IntArraySWAG" : [
+        "java.util.function.IntBinaryOperator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.math.number.DiscreteLogarithm" : [
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.util.OptionalLong",
+        "java.util.Iterator",
+        "java.util.Map",
+        "java.util.function.BiFunction",
+        "java.util.function.BiConsumer",
+        "java.util.HashMap",
+        "java.util.function.BinaryOperator",
+        "java.util.ArrayList",
+        "java.util.function.LongConsumer"
+    ],
+    "lib.datastructure.RangeOrderedMultiSet" : [
+        "java.util.PrimitiveIterator",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.algebra.grouplike.Group" : [
+        "java.util.Objects",
+        "java.util.function.BiFunction",
+        "java.util.function.UnaryOperator",
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.math.LinearSieve" : [
+        "java.util.Arrays",
+        "java.util.OptionalInt",
+        "java.util.ArrayList"
+    ],
+    "lib.datastructure.longs.LongLazySegmentTree" : [
+        "java.util.Arrays",
+        "java.util.function.LongBinaryOperator",
+        "java.util.function.LongPredicate"
+    ],
+    "lib.util.pair.Pair3" : [
+        "java.util.Objects"
+    ],
+    "lib.algebra.ringlike.Ring" : [
+        "java.util.function.UnaryOperator",
+        "java.util.function.Supplier",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.persistent.PersistentIntSegmentTree" : [
+        "java.util.function.IntUnaryOperator",
+        "java.util.function.IntBinaryOperator"
+    ],
+    "lib.util.pair.IntPair" : [
+        "java.util.function.ToIntFunction",
+        "java.util.Comparator"
+    ],
+    "lib.datastructure.OrderedMultiSet" : [
+        "java.util.Comparator"
+    ],
+    "lib.algebra.grouplike.Magma" : [
+        "java.util.Objects",
+        "java.util.function.BiFunction",
+        "java.util.function.BinaryOperator"
+    ],
+    "lib.datastructure.ints.IntSparseTable" : [
+        "java.util.function.IntBinaryOperator"
+    ]
+}
+

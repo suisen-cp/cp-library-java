@@ -1,0 +1,1 @@
+javac -d "dependency_expander/out" dependency_expander/src/*.java
