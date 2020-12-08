@@ -1,5 +1,17 @@
 package lib.io;
 
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.UncheckedIOException;
+import java.lang.reflect.Field;
+import java.nio.CharBuffer;
+import java.nio.charset.CharacterCodingException;
+import java.nio.charset.CharsetEncoder;
+import java.nio.charset.StandardCharsets;
+
 /**
  * @author https://atcoder.jp/users/suisen
  */
@@ -14,34 +26,34 @@ public class FastPrintStream implements AutoCloseable {
     private static final int BUF_SIZE_MINUS_LONG_MAX_LEN = BUF_SIZE - LONG_MAX_LEN;
     private final byte[] buf = new byte[BUF_SIZE];
     private int ptr = 0;
-    private final java.lang.reflect.Field strField;
-    private final java.nio.charset.CharsetEncoder encoder;
+    private final Field strField;
+    private final CharsetEncoder encoder;
 
-    private final java.io.OutputStream out;
+    private final OutputStream out;
 
-    public FastPrintStream(java.io.OutputStream out) {
+    public FastPrintStream(OutputStream out) {
         this.out = out;
-        java.lang.reflect.Field f;
+        Field f;
         try {
-            f = java.lang.String.class.getDeclaredField("value");
+            f = String.class.getDeclaredField("value");
             f.setAccessible(true);
         } catch (NoSuchFieldException | SecurityException e) {
             f = null;
         }
         this.strField = f;
-        this.encoder = java.nio.charset.StandardCharsets.US_ASCII.newEncoder();
+        this.encoder = StandardCharsets.US_ASCII.newEncoder();
     }
 
-    public FastPrintStream(java.io.File file) throws java.io.IOException {
-        this(new java.io.FileOutputStream(file));
+    public FastPrintStream(File file) throws IOException {
+        this(new FileOutputStream(file));
     }
 
-    public FastPrintStream(java.lang.String filename) throws java.io.IOException {
-        this(new java.io.File(filename));
+    public FastPrintStream(String filename) throws IOException {
+        this(new File(filename));
     }
 
     public FastPrintStream() {
-        this(new java.io.FileOutputStream(java.io.FileDescriptor.out));
+        this(new FileOutputStream(FileDescriptor.out));
     }
 
     public FastPrintStream println() {
@@ -50,11 +62,11 @@ public class FastPrintStream implements AutoCloseable {
         return this;
     }
 
-    public FastPrintStream println(java.lang.Object o) {
+    public FastPrintStream println(Object o) {
         return print(o).println();
     }
 
-    public FastPrintStream println(java.lang.String s) {
+    public FastPrintStream println(String s) {
         return print(s).println();
     }
 
@@ -88,8 +100,8 @@ public class FastPrintStream implements AutoCloseable {
             internalFlush();
             try {
                 out.write(bytes);
-            } catch (java.io.IOException e) {
-                throw new java.io.UncheckedIOException(e);
+            } catch (IOException e) {
+                throw new UncheckedIOException(e);
             }
         } else {
             System.arraycopy(bytes, 0, buf, ptr, n);
@@ -98,11 +110,11 @@ public class FastPrintStream implements AutoCloseable {
         return this;
     }
 
-    public FastPrintStream print(java.lang.Object o) {
+    public FastPrintStream print(Object o) {
         return print(o.toString());
     }
 
-    public FastPrintStream print(java.lang.String s) {
+    public FastPrintStream print(String s) {
         if (strField == null) {
             return print(s.getBytes());
         } else {
@@ -121,8 +133,8 @@ public class FastPrintStream implements AutoCloseable {
 
     public FastPrintStream print(char[] s) {
         try {
-            return print(encoder.encode(java.nio.CharBuffer.wrap(s)).array());
-        } catch (java.nio.charset.CharacterCodingException e) {
+            return print(encoder.encode(CharBuffer.wrap(s)).array());
+        } catch (CharacterCodingException e) {
             byte[] bytes = new byte[s.length];
             for (int i = 0; i < s.length; i++) {
                 bytes[i] = (byte) s[i];
@@ -222,8 +234,8 @@ public class FastPrintStream implements AutoCloseable {
         try {
             out.write(buf, 0, ptr);
             ptr = 0;
-        } catch (java.io.IOException e) {
-            throw new java.io.UncheckedIOException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
         }
     }
 
@@ -232,16 +244,16 @@ public class FastPrintStream implements AutoCloseable {
             out.write(buf, 0, ptr);
             out.flush();
             ptr = 0;
-        } catch (java.io.IOException e) {
-            throw new java.io.UncheckedIOException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
         }
     }
 
     public void close() {
         try {
             out.close();
-        } catch (java.io.IOException e) {
-            throw new java.io.UncheckedIOException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
         }
     }
 

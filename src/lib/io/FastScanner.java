@@ -1,21 +1,28 @@
 package lib.io;
 
+import java.io.EOFException;
+import java.io.FileDescriptor;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UncheckedIOException;
+
 /**
  * @author https://atcoder.jp/users/suisen
  */
 public class FastScanner implements AutoCloseable {
     private final ByteBuffer tokenBuf = new ByteBuffer();
-    private final java.io.InputStream in;
+    private final InputStream in;
     private final byte[] rawBuf = new byte[1 << 14];
     private int ptr = 0;
     private int buflen = 0;
 
-    public FastScanner(java.io.InputStream in) {
+    public FastScanner(InputStream in) {
         this.in = in;
     }
 
     public FastScanner() {
-        this(new java.io.FileInputStream(java.io.FileDescriptor.in));
+        this(new FileInputStream(FileDescriptor.in));
     }
 
     private int readByte() {
@@ -26,10 +33,10 @@ public class FastScanner implements AutoCloseable {
             if (buflen > 0) {
                 return rawBuf[ptr++];
             } else {
-                throw new java.io.EOFException();
+                throw new EOFException();
             }
-        } catch (java.io.IOException e) {
-            throw new java.io.UncheckedIOException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
         }
     }
 
@@ -43,8 +50,8 @@ public class FastScanner implements AutoCloseable {
             } else {
                 return -1;
             }
-        } catch (java.io.IOException e) {
-            throw new java.io.UncheckedIOException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
         }
     }
 
@@ -146,8 +153,8 @@ public class FastScanner implements AutoCloseable {
     public final void close() {
         try {
             in.close();
-        } catch (java.io.IOException e) {
-            throw new java.io.UncheckedIOException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
         }
     }
 
