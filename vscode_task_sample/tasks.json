@@ -4,7 +4,7 @@
 
     "tasks": [
         {
-            "label": "main",
+            "label": "expand",
             "type": "shell",
             "command": "dependency_expander/scripts/expander.sh",
             "args": [
@@ -25,7 +25,7 @@
             }
         },
         {
-            "label": "update library",
+            "label": "compile libraries",
             "type": "shell",
             "command": "(dependency_expander/scripts/compile_library.sh; dependency_expander/scripts/build_dependency_graph.sh)",
             "options": {
@@ -75,7 +75,7 @@
             }
         },
         {
-            "label": "rm [A-Z].java",
+            "label": "remove [A-Z].java",
             "type": "shell",
             "command": "for a in {A..Z}; do rm -f \"${input:rm_path}/${a}.java\"; done",
             "options": {
