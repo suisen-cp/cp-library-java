@@ -33,9 +33,8 @@ public class Expander {
                     } else {
                         depsLib.add(lib);
                     }
-                    depsStd.addAll(depMapStd.getOrDefault(lib, EMPTY_MAP));
-
                 });
+        depsLib.forEach(lib -> depsStd.addAll(depMapStd.getOrDefault(lib, EMPTY_MAP)));
         Arrays.stream(args[ARG_STD_DEPS].split("\n")).forEach(dep -> {
             depsStd.add(dep.split(LibExpander.INNER_CLASS_SYMBOL)[0]);
         });

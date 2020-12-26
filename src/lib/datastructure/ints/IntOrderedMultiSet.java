@@ -1,9 +1,15 @@
 package lib.datastructure.ints;
 
-public class IntOrderedMultiSet extends IntRandomizedBinarySearchTree<Object> {
-    Node root;
-    int kthElement(Node t, int k) {
-        int c = size(t.l);
+import java.util.PrimitiveIterator;
+
+import lib.util.itertools.IterUtil;
+
+public class IntOrderedMultiSet implements Iterable<Integer> {
+    private static final Object DUMMY = new Object();
+
+    IntRandomizedBinarySearchTree<Object> root;
+    static int kthElement(IntRandomizedBinarySearchTree<?> t, int k) {
+        int c = IntRandomizedBinarySearchTree.size(t.l);
         if (k < c) return kthElement(t.l, k);
         if (k == c) return t.key;
         return kthElement(t.r, k - c - 1);
@@ -12,45 +18,44 @@ public class IntOrderedMultiSet extends IntRandomizedBinarySearchTree<Object> {
         if (k < 0 || k >= size()) throw new IndexOutOfBoundsException();
         return kthElement(root, k);
     }
-    Node insertKey(Node t, int key) {
-        return insert(t, leqCount(t, key), key, null);
+    public int lowerElement(int key) {return kthElement(ltCount(key) - 1);}
+    public int higherElement(int key) {return kthElement(leqCount(key));}
+    public int first() {return kthElement(0);}
+    public int last() {return kthElement(size() - 1);}
+    public void add(int key) {root = IntRandomizedBinarySearchTree.insert(root, leqCount(root, key), key, DUMMY);}
+    static IntRandomizedBinarySearchTree<Object> eraseEntry(IntRandomizedBinarySearchTree<Object> t, int key) {
+        return IntRandomizedBinarySearchTree.erase(t, leqCount(t, key) - 1);
     }
-    public void insertKey(int key) {
-        root = insertKey(root, key);
+    public boolean remove(int key) {
+        if (contains(key)) {
+            root = IntRandomizedBinarySearchTree.erase(root, leqCount(root, key) - 1);
+            return true;
+        }
+        return false;
     }
-    Node eraseKey(Node t, int key) {
-        if (count(t, key) == 0) return t;
-        return super.erase(t, leqCount(t, key) - 1);
+    public boolean contains(int key) {
+        IntRandomizedBinarySearchTree<Object> t = root;
+        while (t != null) {
+            if (t.key == key) return true;
+            t = t.key > key ? t.l : t.r;
+        }
+        return false;
     }
-    public void eraseKey(int key) {
-        root = eraseKey(root, key);
-    }
-    int count(Node t, int key) {
-        return leqCount(t, key) - ltCount(t, key);
-    }
-    public int count(int key) {
-        return count(root, key);
-    }
-    int leqCount(Node t, int key) {
+    static int leqCount(IntRandomizedBinarySearchTree<?> t, int key) {
         if (t == null) return 0;
         if (key < t.key) return leqCount(t.l, key);
-        return leqCount(t.r, key) + size(t.l) + 1;
+        return leqCount(t.r, key) + IntRandomizedBinarySearchTree.size(t.l) + 1;
     }
-    public int leqCount(int key) {
-        return leqCount(root, key);
-    }
-    int ltCount(Node t, int key) {
+    public int leqCount(int key) {return leqCount(root, key);}
+    static int ltCount(IntRandomizedBinarySearchTree<?> t, int key) {
         if (t == null) return 0;
         if (key <= t.key) return ltCount(t.l, key);
-        return ltCount(t.r, key) + size(t.l) + 1;
+        return ltCount(t.r, key) + IntRandomizedBinarySearchTree.size(t.l) + 1;
     }
-    public int ltCount(int key) {
-        return ltCount(root, key);
-    }
-    public int size() {
-        return size(root);
-    }
-    public void clear() {
-        this.root = null;
-    }
+    public int ltCount(int key) {return ltCount(root, key);}
+    public int count(int key) {return leqCount(key) - ltCount(key);}
+    public int size() {return IntRandomizedBinarySearchTree.size(root);}
+    public boolean isEmpty() {return size() == 0;}
+    public void clear() {this.root = null;}
+    public PrimitiveIterator.OfInt iterator() {return isEmpty() ? IterUtil.emptyIntIterator() : root.keyIterator();}
 }

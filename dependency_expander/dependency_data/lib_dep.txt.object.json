@@ -30,6 +30,8 @@
     ],
     "lib.datastructure.ints.IntOrderedMap" : [
         "lib.datastructure.ints.IntOrderedMap",
+        "lib.util.pair.Pair",
+        "lib.util.itertools.IterUtil",
         "lib.util.pair.IntEntry",
         "lib.util.Random",
         "lib.datastructure.ints.IntRandomizedBinarySearchTree"
@@ -104,6 +106,10 @@
         "lib.math.MathUtil",
         "lib.util.ext_std.MapUtil"
     ],
+    "lib.util.itertools.IterConcatenatorTest" : [
+        "lib.util.itertools.IterUtil",
+        "lib.util.itertools.IterConcatenatorTest"
+    ],
     "lib.util.collections.DoubleDeque" : [
         "lib.util.collections.DoubleDeque"
     ],
@@ -132,6 +138,9 @@
         "lib.datastructure.BitVectorBuilder",
         "lib.util.pair.IntPair3",
         "lib.datastructure.ints.IntWaveletMatrix"
+    ],
+    "lib.util.itertools.IterUtil" : [
+        "lib.util.itertools.IterUtil"
     ],
     "lib.datastructure.RandomizedBinarySearchTree" : [
         "lib.datastructure.RandomizedBinarySearchTree",
@@ -391,6 +400,11 @@
     "lib.datastructure.DualSegmentTree" : [
         "lib.datastructure.DualSegmentTree"
     ],
+    "lib.algorithm.DoubleMonotoneConvexHullTrick" : [
+        "lib.util.collections.Deque",
+        "lib.algorithm.DoubleMonotoneConvexHullTrick",
+        "lib.base.Const"
+    ],
     "lib.graph.Kruskal" : [
         "lib.graph.Kruskal",
         "lib.graph.AbstractGraph",
@@ -503,6 +517,10 @@
         "lib.math.number.Convolution",
         "lib.math.number.ModArithmetic"
     ],
+    "lib.persistent.PersistentQueue" : [
+        "lib.persistent.PersistentQueue",
+        "lib.persistent.PersistentStack"
+    ],
     "lib.util.sort.ints.IntRadixSort" : [
         "lib.util.sort.ints.IntRadixSort",
         "lib.util.sort.ints.IntInsertionSort"
@@ -514,6 +532,9 @@
         "lib.util.function.IntBiConsumer",
         "lib.tree.HLD",
         "lib.tree.Tree"
+    ],
+    "lib.persistent.PersistentStack" : [
+        "lib.persistent.PersistentStack"
     ],
     "lib.graph.CapEdge" : [
         "lib.graph.AbstractEdge",
@@ -568,6 +589,8 @@
         "lib.util.sort.ints.IntInsertionSortUsingComparator"
     ],
     "lib.datastructure.ints.IntOrderedSet" : [
+        "lib.util.pair.Pair",
+        "lib.util.itertools.IterUtil",
         "lib.util.Random",
         "lib.util.pair.IntEntry",
         "lib.datastructure.ints.IntOrderedSet",
@@ -678,6 +701,8 @@
         "lib.tree.Tree"
     ],
     "lib.datastructure.ints.IntOrderedMultiSet" : [
+        "lib.util.pair.Pair",
+        "lib.util.itertools.IterUtil",
         "lib.util.Random",
         "lib.util.pair.IntEntry",
         "lib.datastructure.ints.IntOrderedMultiSet",
@@ -783,6 +808,10 @@
     "lib.algorithm.TwoSAT" : [
         "lib.algorithm.TwoSAT"
     ],
+    "lib.util.pair.DoubleIntPair" : [
+        "lib.util.pair.DoubleIntPair",
+        "lib.util.pair.DoublePair"
+    ],
     "lib.datastructure.longs.LongDualSegmentTree" : [
         "lib.datastructure.longs.LongDualSegmentTree"
     ],
@@ -847,6 +876,8 @@
         "lib.datastructure.longs.LongRangeAddRangeGCD"
     ],
     "lib.algorithm.ints.IntRemovablePrioritySum" : [
+        "lib.util.pair.Pair",
+        "lib.util.itertools.IterUtil",
         "lib.util.Random",
         "lib.util.pair.IntEntry",
         "lib.algorithm.ints.IntRemovablePrioritySum",
@@ -962,9 +993,19 @@
         "lib.tree.Tree"
     ],
     "lib.datastructure.ints.IntRandomizedBinarySearchTree" : [
+        "lib.util.pair.Pair",
+        "lib.util.itertools.IterUtil",
         "lib.util.Random",
         "lib.util.pair.IntEntry",
         "lib.datastructure.ints.IntRandomizedBinarySearchTree"
+    ],
+    "lib.util.collections.longs.LongHashMap" : [
+        "lib.util.pair.Pair",
+        "lib.datastructure.longs.LongOrderedMap",
+        "lib.util.Random",
+        "lib.util.pair.IntEntry",
+        "lib.util.pair.LongEntry",
+        "lib.util.collections.longs.LongHashMap"
     ],
     "lib.datastructure.ints.IntBinaryTrie2" : [
         "lib.datastructure.ints.IntBinaryTrie2"
@@ -1005,6 +1046,15 @@
         "lib.algebra.grouplike.Group",
         "lib.algebra.grouplike.Magma",
         "lib.algebra.grouplike.properties.Associative"
+    ],
+    "lib.util.collections.ints.IntHashMap" : [
+        "lib.datastructure.ints.IntOrderedMap",
+        "lib.util.pair.Pair",
+        "lib.util.itertools.IterUtil",
+        "lib.util.pair.IntEntry",
+        "lib.util.Random",
+        "lib.util.collections.ints.IntHashMap",
+        "lib.datastructure.ints.IntRandomizedBinarySearchTree"
     ],
     "lib.math.LinearSieve" : [
         "lib.math.IntPrimePower",

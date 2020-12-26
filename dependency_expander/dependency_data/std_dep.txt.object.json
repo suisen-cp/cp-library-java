@@ -1,1018 +1,3418 @@
 {
     "lib.algebra.ringlike.Ringoid" : [
+        "java.lang.Object",
         "java.util.function.BinaryOperator"
     ],
+    "lib.algorithm.MaximumRectangle" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
+    ],
+    "lib.string.Manacher" : [
+        "java.util.Arrays",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.Integer",
+        "java.util.function.IntFunction"
+    ],
     "lib.util.pair.LongPair" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.util.itertools.CombinationsWithReplacement" : [
         "java.util.Arrays",
-        "java.util.Iterator"
+        "java.util.Iterator",
+        "java.lang.Object",
+        "java.lang.Iterable"
     ],
     "lib.util.pair.IntPair3" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.lang.Integer"
+    ],
+    "lib.util.Chars" : [
+        "java.lang.Object"
     ],
     "lib.algorithm.InversionNumber" : [
         "java.util.stream.IntStream",
         "java.util.Arrays",
-        "java.util.Iterator",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.function.IntUnaryOperator",
-        "java.util.Collection",
+        "java.lang.System",
         "java.util.function.IntBinaryOperator",
         "java.util.HashMap",
         "java.util.OptionalInt",
+        "java.lang.Integer",
         "java.util.function.IntPredicate",
+        "java.lang.FunctionalInterface",
         "java.util.HashSet",
+        "java.lang.Long",
+        "java.lang.String",
+        "java.util.function.LongPredicate",
+        "java.lang.Number",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.Collection",
+        "java.lang.invoke.MethodType",
         "java.util.function.IntToLongFunction",
         "java.util.function.LongUnaryOperator",
-        "java.util.function.LongPredicate"
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder"
     ],
     "lib.util.Doubles" : [
         "java.math.BigDecimal",
         "java.util.function.DoubleBinaryOperator",
+        "java.lang.Double",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.math.RoundingMode"
     ],
     "lib.algorithm.longs.LongCompress" : [
-        "java.util.HashSet",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.IntToLongFunction",
         "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
-        "java.util.function.LongUnaryOperator",
+        "java.lang.invoke.MethodHandles",
         "java.util.Collection",
         "java.util.function.IntBinaryOperator",
         "java.util.HashMap",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.FunctionalInterface",
+        "java.util.HashSet",
+        "java.lang.invoke.MethodType",
+        "java.util.function.IntToLongFunction",
+        "java.lang.Long",
+        "java.util.function.LongUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.LongPredicate",
-        "java.util.function.IntPredicate"
+        "java.lang.Number"
+    ],
+    "lib.datastructure.ints.IntOrderedMap" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.Objects",
+        "java.util.PrimitiveIterator",
+        "java.util.List",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.algebra.ringlike.properties.AdditiveInvertible" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
+    "lib.util.array.IntArrays" : [
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.util.sort.IndexSort" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.function.IntUnaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Comparable",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.Comparator"
     ],
+    "BuildLibraries" : [
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Exception"
+    ],
     "lib.util.function.IntObjConsumer" : [
-        "java.util.function.Consumer"
+        "java.lang.FunctionalInterface",
+        "java.util.function.Consumer",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.util.collections.longs.LongArrayList" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
-        "java.util.Iterator"
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.util.function.IntBiPredicate" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.LongPredicate",
         "java.util.function.IntPredicate"
     ],
     "lib.util.pair.DoublePair" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.Double",
+        "java.lang.invoke.CallSite",
+        "java.util.function.ToDoubleFunction",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.Comparator"
+    ],
+    "lib.math.number.ConvolutionAnyMod" : [
+        "java.util.OptionalLong",
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.util.sort.longs.LongMergeSortUsingComparator" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Object"
     ],
     "lib.datastructure.CommutativeDualSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
-        "java.util.function.BinaryOperator"
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.BinaryOperator",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.persistent.PersistentIntStack" : [
         "java.util.PrimitiveIterator",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.NoSuchElementException"
     ],
     "lib.util.collections.longs.LongPriorityQueue" : [
+        "java.lang.FunctionalInterface",
         "java.util.OptionalLong",
+        "java.lang.invoke.MethodType",
+        "java.lang.System",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.NoSuchElementException"
+    ],
+    "lib.util.function.VoidToVoidFunction" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
+    "lib.persistent.PersistentDeque" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
     ],
     "lib.math.number.ModPolynomialFactory" : [
         "java.util.OptionalLong",
         "java.util.Arrays",
-        "java.util.Optional"
+        "java.lang.System",
+        "java.lang.Math",
+        "java.util.Optional",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String"
+    ],
+    "lib.geom.Circle" : [
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.Comparator"
+    ],
+    "lib.util.function.ByteConsumer" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
+    "lib.util.function.LongObjToLongFunction" : [
+        "java.lang.Object"
     ],
     "lib.persistent.PersistentUnionFindWithInfo" : [
-        "java.util.RandomAccess",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.lang.reflect.Array",
         "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
-        "java.util.NoSuchElementException",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
         "java.util.function.BinaryOperator",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
         "java.util.function.IntFunction"
     ],
     "lib.math.number.ConvolutionNTTPrime" : [
         "java.util.OptionalLong",
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.util.Random" : [
+        "java.lang.Object"
     ],
     "lib.datastructure.RangeOrderedSet" : [
         "java.util.PrimitiveIterator",
-        "java.util.NoSuchElementException"
+        "java.lang.Object",
+        "java.lang.RuntimeException",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.lang.Integer"
     ],
     "lib.math.MathUtil" : [
-        "java.util.Objects",
-        "java.util.function.Consumer",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Iterator",
-        "java.util.Map",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
-        "java.util.function.BiConsumer",
         "java.util.HashMap",
+        "java.lang.Integer",
         "java.util.function.BinaryOperator",
         "java.util.ArrayList",
-        "java.util.function.LongConsumer"
+        "java.util.function.LongConsumer",
+        "java.util.Objects",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.util.Map",
+        "java.util.function.BiConsumer",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.util.function.LongBiPredicate" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.LongPredicate"
     ],
+    "lib.util.itertools.IterConcatenatorTest" : [
+        "java.io.PrintStream",
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.ArrayList",
+        "java.util.PrimitiveIterator",
+        "java.util.List",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
     "lib.util.BitUtil" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.AssertionError",
+        "java.lang.Integer"
     ],
     "lib.util.collections.DoubleDeque" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Iterator",
+        "java.lang.Double",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.NoSuchElementException"
     ],
     "lib.util.itertools.Combinations" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.Iterator",
-        "java.util.function.IntUnaryOperator"
-    ],
-    "lib.datastructure.DSUSequence" : [
-        "java.util.Arrays",
+        "java.lang.invoke.MethodType",
         "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Iterable"
+    ],
+    "lib.datastructure.DSUSequence" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.invoke.MethodType",
+        "java.util.Iterator",
+        "java.util.function.IntUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.ArrayList"
     ],
+    "lib.algebra.ringlike.properties.AdditiveAssociative" : [
+        "java.lang.Object"
+    ],
     "lib.tree.Forest" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.String",
+        "java.lang.NullPointerException"
+    ],
+    "lib.string.KMP" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.Arrays",
+        "java.lang.Cloneable",
+        "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.CloneNotSupportedException",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.function.IntFunction"
+    ],
+    "lib.algebra.ringlike.properties.MultiplicativeAssociative" : [
+        "java.lang.Object"
     ],
     "lib.datastructure.ints.IntWaveletMatrix" : [
         "java.io.PrintStream",
-        "java.util.Objects",
         "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.util.HashMap",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
         "java.math.BigInteger",
-        "java.util.BitSet"
+        "java.lang.String",
+        "java.util.BitSet",
+        "java.lang.invoke.StringConcatFactory",
+        "java.lang.Byte"
     ],
     "lib.util.Ints" : [
-        "java.util.function.IntBinaryOperator"
+        "java.lang.Math",
+        "java.util.function.IntBinaryOperator",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.util.itertools.IterUtil" : [
+        "java.util.PrimitiveIterator",
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.List",
+        "java.lang.invoke.MethodType",
+        "java.util.Iterator",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Iterable"
+    ],
+    "lib.datastructure.RandomizedBinarySearchTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
     ],
     "lib.algebra.grouplike.AbelianGroup" : [
-        "java.util.Objects",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
         "java.util.function.UnaryOperator",
         "java.util.function.Supplier",
-        "java.util.function.BinaryOperator"
+        "java.util.function.BinaryOperator",
+        "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.linear.IntRingMatrixFactory" : [
         "java.util.Objects",
         "java.util.Arrays",
         "java.util.function.IntUnaryOperator",
-        "java.util.function.IntBinaryOperator"
+        "java.util.function.IntBinaryOperator",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
     ],
     "lib.geom.Complex" : [
-        "java.util.Comparator",
-        "java.io.Serializable"
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.Comparator"
+    ],
+    "lib.algebra.grouplike.properties.Commutative" : [
+        "java.lang.Object"
+    ],
+    "lib.algorithm.MonotoneConvexHullTrick" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
     ],
     "lib.io.FastScanner2" : [
-        "java.util.Objects",
+        "java.lang.Throwable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.function.IntToDoubleFunction",
-        "java.util.function.IntToLongFunction",
         "java.util.function.IntUnaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.io.IOException",
+        "java.lang.NumberFormatException",
+        "java.lang.RuntimeException",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.util.function.IntToLongFunction",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.NoSuchElementException",
         "java.io.InputStream",
         "java.util.function.IntFunction"
     ],
     "lib.persistent.PersistentArray" : [
-        "java.util.RandomAccess",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.lang.reflect.Array",
         "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.NoSuchElementException",
         "java.util.function.IntFunction"
     ],
+    "lib.math.number.LagrangeInterpolation" : [
+        "java.util.OptionalLong",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String"
+    ],
+    "lib.datastructure.ints.IntBinaryIndexedTree" : [
+        "java.lang.System",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
     "lib.util.function.IntToLongBiFunction" : [
-        "java.util.function.IntToLongFunction"
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.util.function.IntToLongFunction",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String"
+    ],
+    "lib.util.IntLinearFunction" : [
+        "java.lang.Object"
+    ],
+    "lib.tree.DoublingLCA" : [
+        "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.Object"
     ],
     "lib.datastructure.LazySegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.System",
         "java.util.function.Predicate",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
-        "java.util.function.BinaryOperator"
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.BinaryOperator",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.util.sort.longs.LongInsertionSortUsingComparator" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
     ],
     "lib.graph.BellmanFord" : [
         "java.util.Arrays",
         "java.util.Iterator",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.util.collections.ints.IntTreeSet" : [
+        "java.lang.IllegalStateException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.util.OptionalInt",
+        "java.lang.Iterable",
         "java.util.PrimitiveIterator",
         "java.util.Objects",
+        "java.lang.FunctionalInterface",
         "java.util.function.Consumer",
-        "java.util.Iterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.NoSuchElementException",
-        "java.util.OptionalInt",
         "java.util.ConcurrentModificationException"
     ],
     "lib.util.ObjectUtils" : [
+        "java.lang.Comparable",
+        "java.lang.Object",
         "java.util.Comparator"
     ],
     "lib.datastructure.longs.LongWaveletMatrixBuilder" : [
+        "java.lang.Long",
+        "java.lang.System",
+        "java.lang.Object",
         "java.util.HashMap",
         "java.math.BigInteger",
-        "java.util.BitSet"
+        "java.lang.String",
+        "java.util.BitSet",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Byte",
+        "java.lang.Integer"
+    ],
+    "lib.math.number.NTTmods" : [
+        "java.lang.Enum",
+        "java.lang.Class",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.linear.ModMatrixFactory" : [
         "java.util.OptionalLong",
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.Integer"
     ],
     "lib.datastructure.DisjointSetUnionWithInfo" : [
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer",
         "java.util.function.BinaryOperator",
         "java.util.function.IntFunction"
     ],
-    "lib.graph.BipartiteMatching" : [
-        "java.util.Arrays",
-        "java.util.Iterator",
-        "java.util.function.ToIntFunction",
+    "lib.geom.light.LLine" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
         "java.util.Comparator",
-        "java.util.ArrayList"
+        "java.util.function.ToLongFunction"
+    ],
+    "lib.geom.light.LPolygon" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.Cloneable",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
+        "java.util.Comparator",
+        "java.util.function.ToLongFunction"
+    ],
+    "lib.graph.BipartiteMatching" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.UnsupportedOperationException",
+        "java.util.Arrays",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.ToIntFunction",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.ArrayList",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.Comparator"
+    ],
+    "lib.algorithm.longs.LongPrioritySum" : [
+        "java.lang.FunctionalInterface",
+        "java.util.OptionalLong",
+        "java.lang.invoke.MethodType",
+        "java.lang.System",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.NoSuchElementException"
     ],
     "lib.algorithm.ints.IntSWAG" : [
         "java.util.function.IntBinaryOperator",
+        "java.lang.Object",
         "java.util.NoSuchElementException"
     ],
+    "lib.datastructure.ints.IntBinaryTrie" : [
+        "java.lang.Object",
+        "java.lang.AssertionError",
+        "java.lang.Integer"
+    ],
+    "lib.algebra.ringlike.properties.MultiplicativeIdempotent" : [
+        "java.lang.Object"
+    ],
+    "lib.algebra.grouplike.properties.Associative" : [
+        "java.lang.Object"
+    ],
     "lib.util.pair.Pair" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.graph.BCC" : [
         "java.util.Arrays",
         "java.util.Iterator",
+        "java.lang.Long",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.graph.Dijkstra2" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
+        "java.lang.Cloneable",
         "java.util.Iterator",
-        "java.util.function.IntPredicate"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.CloneNotSupportedException",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.string.RollingHashFactory" : [
-        "java.util.Random"
+        "java.lang.System",
+        "java.lang.Object",
+        "java.util.Random",
+        "java.lang.String"
     ],
     "lib.datastructure.ints.IntLazySegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.IntBinaryOperator",
-        "java.util.function.IntPredicate"
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.util.function.LongBiConsumer" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.LongConsumer"
     ],
+    "lib.math.LongPrimePower" : [
+        "java.lang.Object"
+    ],
+    "lib.algorithm.CumulativeSum" : [
+        "java.lang.System",
+        "java.lang.Object"
+    ],
+    "lib.geom.Line" : [
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Class",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.Comparator"
+    ],
     "lib.util.function.LongIntToLongFunction" : [
-        "java.util.function.IntToLongFunction"
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.util.function.IntToLongFunction",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.algebra.ringlike.BoundedLattice" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object",
         "java.util.function.Supplier",
         "java.util.function.BinaryOperator"
     ],
     "lib.algebra.ringlike.CommutativeRing" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object",
         "java.util.function.UnaryOperator",
         "java.util.function.Supplier",
         "java.util.function.BinaryOperator"
     ],
     "lib.io.ExtendedScanner" : [
-        "java.io.UncheckedIOException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.function.IntToDoubleFunction",
-        "java.util.function.IntToLongFunction",
         "java.util.function.IntUnaryOperator",
-        "java.util.function.LongUnaryOperator",
-        "java.io.FileDescriptor",
+        "java.lang.Double",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.io.IOException",
+        "java.lang.NumberFormatException",
         "java.io.FileInputStream",
         "java.io.EOFException",
+        "java.lang.AutoCloseable",
+        "java.io.UncheckedIOException",
+        "java.lang.invoke.MethodType",
+        "java.util.function.IntToLongFunction",
+        "java.util.function.LongUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.io.FileDescriptor",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String",
         "java.io.InputStream",
         "java.util.function.IntFunction"
     ],
-    "lib.geom.ClosestPair" : [
-        "java.util.Objects",
+    "lib.string.Zalgorithm" : [
         "java.util.Arrays",
-        "java.util.Comparator",
-        "java.io.Serializable"
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.function.IntFunction"
+    ],
+    "lib.util.sort.longs.LongMergeSort" : [
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Object"
+    ],
+    "lib.geom.ClosestPair" : [
+        "java.util.Arrays",
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.Comparator"
     ],
     "lib.algorithm.longs.LongLIS" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.AssertionError"
     ],
     "lib.algorithm.longs.LongArraySWAG" : [
         "java.util.function.LongBinaryOperator",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.IllegalArgumentException",
         "java.util.NoSuchElementException"
     ],
     "lib.util.itertools.ExtendedPrimitiveIterator" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodHandles",
         "java.util.Objects",
-        "java.util.function.Consumer"
+        "java.util.PrimitiveIterator",
+        "java.util.function.Consumer",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.Character",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Byte"
     ],
     "lib.graph.LowLink" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
+        "java.lang.Cloneable",
         "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
         "java.util.function.IntPredicate",
-        "java.util.ArrayList"
+        "java.lang.CloneNotSupportedException",
+        "java.lang.Iterable",
+        "java.util.ArrayList",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Comparable",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.datastructure.ints.IntCommutativeDualSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.IntBinaryOperator"
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntBinaryOperator",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.math.number.ConvolutionBitOps" : [
         "java.util.function.LongBinaryOperator",
-        "java.util.function.LongUnaryOperator"
+        "java.util.function.LongUnaryOperator",
+        "java.lang.Object",
+        "java.lang.AssertionError"
     ],
     "lib.datastructure.DSUForest" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.IntUnaryOperator"
+        "java.util.function.IntUnaryOperator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.AssertionError",
+        "java.lang.Integer",
+        "java.lang.NullPointerException",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.String"
     ],
     "lib.util.pair.IntEntry" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.math.Rational" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.util.function.BiFunction",
+        "java.util.HashMap",
+        "java.lang.Integer",
+        "java.lang.CloneNotSupportedException",
+        "java.util.ArrayList",
+        "java.lang.Long",
+        "java.util.Map",
+        "java.util.function.BiConsumer",
+        "java.lang.Math",
+        "java.lang.String",
+        "java.lang.Number",
+        "java.lang.Cloneable",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.BinaryOperator",
+        "java.util.function.LongConsumer",
         "java.util.Objects",
         "java.util.function.Consumer",
-        "java.util.Iterator",
-        "java.util.Map",
-        "java.util.function.BiFunction",
-        "java.util.function.BiConsumer",
-        "java.util.HashMap",
-        "java.util.function.BinaryOperator",
-        "java.util.ArrayList",
-        "java.util.function.LongConsumer"
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Comparable",
+        "java.lang.Object",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.util.sort.ints.BucketSort" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object"
     ],
     "lib.datastructure.longs.LongWaveletMatrix" : [
-        "java.util.HashMap"
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.util.HashMap",
+        "java.lang.Integer"
     ],
     "lib.datastructure.BitVectorBuilder" : [
+        "java.lang.Long",
+        "java.lang.System",
+        "java.lang.Object",
         "java.math.BigInteger",
-        "java.util.BitSet"
+        "java.lang.String",
+        "java.util.BitSet",
+        "java.lang.Byte",
+        "java.lang.IllegalArgumentException"
     ],
     "lib.algorithm.ints.IntCompress" : [
-        "java.util.HashSet",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
+        "java.lang.invoke.MethodHandles",
         "java.util.Collection",
         "java.util.function.IntBinaryOperator",
         "java.util.HashMap",
-        "java.util.function.IntPredicate"
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.util.HashSet",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Number"
     ],
     "lib.math.number.Combination" : [
-        "java.util.Objects",
-        "java.util.OptionalLong",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.function.LongBinaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.AssertionError",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.Objects",
+        "java.util.OptionalLong",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.ArithmeticException",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.function.LongPredicate"
     ],
+    "lib.util.sort.longs.LongRadixSort" : [
+        "java.lang.Object"
+    ],
     "lib.persistent.PersistentSegmentTree" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
         "java.util.function.UnaryOperator",
+        "java.lang.String",
         "java.util.function.BinaryOperator"
     ],
     "lib.math.PolynomialSquareRoot" : [
         "java.util.OptionalLong",
         "java.util.Arrays",
+        "java.lang.System",
         "java.util.Optional",
+        "java.lang.Object",
         "java.util.OptionalInt"
+    ],
+    "lib.linear.IntMatrix" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.algebra.ringlike.properties.AdditiveIdempotent" : [
+        "java.lang.Object"
     ],
     "lib.util.itertools.Product" : [
         "java.util.Arrays",
-        "java.util.Iterator"
+        "java.util.Iterator",
+        "java.lang.Object",
+        "java.lang.Iterable"
+    ],
+    "lib.math.number.LazyMontgomery" : [
+        "java.util.OptionalLong",
+        "java.lang.Math",
+        "java.lang.ArithmeticException",
+        "java.lang.Class",
+        "java.lang.Object",
+        "java.lang.AssertionError",
+        "java.lang.String"
+    ],
+    "lib.algorithm.ints.IntPrioritySum" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.System",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.NoSuchElementException",
+        "java.util.OptionalInt"
     ],
     "lib.datastructure.DualSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
-        "java.util.function.BinaryOperator"
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.BinaryOperator",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
+    ],
+    "lib.algorithm.DoubleMonotoneConvexHullTrick" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.reflect.Array",
+        "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
     ],
     "lib.datastructure.longs.LongRangeAffineRangeSum" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.Object",
+        "java.lang.Integer"
     ],
     "lib.datastructure.longs.LongSparseTable" : [
-        "java.util.function.LongBinaryOperator"
+        "java.util.function.LongBinaryOperator",
+        "java.lang.Object"
     ],
     "lib.graph.Kruskal" : [
         "java.util.OptionalLong",
         "java.util.Arrays",
+        "java.lang.Long",
         "java.util.PriorityQueue",
         "java.util.Collection",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.io.FastScanner" : [
-        "java.io.UncheckedIOException",
-        "java.io.FileDescriptor",
+        "java.lang.Double",
+        "java.lang.System",
         "java.io.IOException",
+        "java.lang.NumberFormatException",
         "java.io.FileInputStream",
         "java.io.EOFException",
+        "java.lang.AutoCloseable",
+        "java.io.UncheckedIOException",
+        "java.io.FileDescriptor",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String",
         "java.io.InputStream"
     ],
     "lib.datastructure.longs.LongOrderedSet" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.Collection",
+        "java.util.Set",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.ArrayList",
         "java.util.PrimitiveIterator",
         "java.util.Objects",
         "java.util.OptionalLong",
-        "java.util.Iterator",
-        "java.util.Collection",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
         "java.util.Optional",
-        "java.util.Set",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.ArrayDeque",
-        "java.util.LinkedHashSet",
-        "java.util.ArrayList"
+        "java.util.LinkedHashSet"
+    ],
+    "lib.util.sort.ints.IntMergeSortUsingComparator" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Object"
     ],
     "lib.linear.LongRingMatrixFactory" : [
         "java.util.Objects",
         "java.util.Arrays",
         "java.util.function.LongBinaryOperator",
-        "java.util.function.LongUnaryOperator"
+        "java.util.function.LongUnaryOperator",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
     ],
     "lib.string.SuffixArray" : [
-        "java.util.function.Consumer",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.IntBinaryOperator"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntBinaryOperator",
+        "java.lang.AssertionError",
+        "java.lang.IllegalArgumentException",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.datastructure.ints.DisjointSetUnionWithIntInfo" : [
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
         "java.util.function.IntUnaryOperator",
-        "java.util.function.IntBinaryOperator"
+        "java.util.function.IntBinaryOperator",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.datastructure.ints.IntSkewHeap" : [
+        "java.lang.Object"
+    ],
+    "lib.util.sort.ints.IntInsertionSort" : [
+        "java.lang.Object"
+    ],
+    "lib.geom.FarthestPair" : [
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.Double",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.util.Objects",
+        "java.util.HashSet",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.Comparator"
     ],
     "lib.datastructure.longs.DisjointSetUnionWithLongInfo" : [
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
         "java.util.function.IntToLongFunction",
-        "java.util.function.LongBinaryOperator"
+        "java.util.function.LongBinaryOperator",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.datastructure.TwoDimensionsBinaryIndexedTree" : [
+        "java.lang.Object"
     ],
     "lib.graph.AbstractGraph" : [
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.algebra.grouplike.Monoid" : [
         "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.Supplier",
         "java.util.function.BinaryOperator"
     ],
     "lib.graph.MinCostFlow" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.UnsupportedOperationException",
         "java.util.Arrays",
         "java.util.Iterator",
         "java.util.PriorityQueue",
-        "java.util.ArrayList"
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.ArrayList",
+        "java.lang.Long",
+        "java.lang.Math",
+        "java.lang.Comparable",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.io.FastPrintStream" : [
-        "java.io.OutputStream",
         "java.nio.charset.CharacterCodingException",
+        "java.lang.System",
+        "java.lang.AutoCloseable",
+        "java.lang.Integer",
+        "java.nio.ByteBuffer",
+        "java.lang.NoSuchFieldException",
+        "java.nio.charset.Charset",
+        "java.lang.Long",
+        "java.lang.Math",
+        "java.lang.SecurityException",
+        "java.lang.String",
+        "java.io.OutputStream",
+        "java.lang.IllegalAccessException",
         "java.nio.CharBuffer",
         "java.io.FileOutputStream",
         "java.io.IOException",
         "java.lang.reflect.Field",
         "java.io.File",
-        "java.nio.ByteBuffer",
+        "java.lang.Exception",
         "java.nio.charset.StandardCharsets",
         "java.io.UncheckedIOException",
-        "java.nio.charset.Charset",
         "java.nio.charset.CharsetEncoder",
-        "java.io.FileDescriptor"
+        "java.io.FileDescriptor",
+        "java.lang.Class",
+        "java.lang.Object"
     ],
     "lib.algorithm.ints.IntLIS" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.AssertionError"
     ],
     "lib.util.collections.ints.IntDeque" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
-        "java.util.NoSuchElementException",
-        "java.util.OptionalInt"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.OptionalInt",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.NoSuchElementException"
     ],
     "lib.graph.Digraph" : [
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.tree.Tree" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Object"
+    ],
+    "lib.math.number.Eratosthenes" : [
+        "java.lang.Object",
+        "java.lang.AssertionError"
+    ],
+    "lib.algebra.ringlike.properties.MultiplicativeUnital" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
     ],
     "lib.algebra.ringlike.SemiRing" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object",
         "java.util.function.Supplier",
         "java.util.function.BinaryOperator"
     ],
     "lib.graph.SCC" : [
         "java.util.Arrays",
+        "java.lang.Long",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.graph.MaxFlow" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.UnsupportedOperationException",
         "java.util.Arrays",
         "java.util.Iterator",
+        "java.lang.Long",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.String",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
         "java.util.ArrayList"
     ],
     "lib.datastructure.longs.LongRadixHeap" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
         "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.AssertionError",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.NoSuchElementException"
     ],
-    "lib.util.array.DoubleArrayFactory" : [
+    "lib.tree.TreeBuilder" : [
         "java.util.Arrays",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.String",
+        "java.lang.NullPointerException"
+    ],
+    "lib.algebra.grouplike.properties.Invertible" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
+    "lib.util.array.DoubleArrayFactory" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.invoke.MethodType",
         "java.util.function.IntToDoubleFunction",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.DoubleUnaryOperator"
     ],
+    "lib.math.IntPrimePower" : [
+        "java.lang.Object"
+    ],
+    "lib.linear.LongMatrix" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
     "lib.util.ext_std.MapUtil" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
         "java.util.Map",
         "java.util.function.BiFunction",
         "java.util.function.BiConsumer",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.BinaryOperator"
     ],
     "lib.algorithm.ArraySWAG" : [
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.IllegalArgumentException",
         "java.util.NoSuchElementException",
         "java.util.function.BinaryOperator"
     ],
+    "lib.math.number.Convolution" : [
+        "java.util.OptionalLong",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String"
+    ],
+    "lib.persistent.PersistentQueue" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Iterable",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.util.Optional",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.algebra.grouplike.properties.Unital" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
+    "lib.algebra.ringlike.properties.MultiplicativeInvertible" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
+    "lib.util.function.IntObjToIntFunction" : [
+        "java.lang.Object"
+    ],
     "lib.datastructure.SegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
+        "java.lang.System",
         "java.util.function.Predicate",
-        "java.util.function.BinaryOperator"
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.BinaryOperator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.util.sort.ints.IntRadixSort" : [
+        "java.lang.Object"
     ],
     "lib.util.Tuple" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.MethodType",
+        "java.lang.System",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.lang.IllegalArgumentException"
     ],
     "lib.util.array.ObjArrays" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.UnaryOperator",
-        "java.util.Comparator",
         "java.util.function.BinaryOperator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Comparable",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.util.Comparator",
         "java.util.function.IntFunction"
     ],
     "lib.tree.HLD" : [
+        "java.lang.FunctionalInterface",
         "java.util.Arrays",
-        "java.util.function.IntConsumer"
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntConsumer",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.String"
+    ],
+    "lib.persistent.PersistentStack" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Iterable",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.util.Optional",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.graph.CapEdge" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.Long",
+        "java.lang.Comparable",
+        "java.lang.Object"
+    ],
+    "lib.algorithm.longs.LongRemovablePrioritySum" : [
+        "java.util.Objects",
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.OptionalLong",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.lang.Integer"
     ],
     "lib.math.number.Combinatrics" : [
         "java.util.OptionalLong",
         "java.util.Arrays",
-        "java.util.Optional"
+        "java.lang.System",
+        "java.lang.Math",
+        "java.util.Optional",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.AssertionError",
+        "java.lang.String"
     ],
     "lib.persistent.PersistentIntArray" : [
-        "java.util.RandomAccess",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.lang.reflect.Array",
         "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.NoSuchElementException",
         "java.util.function.IntFunction"
     ],
     "lib.tree.Diameter" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Object"
+    ],
+    "lib.string.Matching" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntBinaryOperator",
+        "java.lang.AssertionError",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.util.collections.ints.IntListIterator" : [
         "java.util.function.Consumer",
         "java.util.ListIterator",
-        "java.util.function.IntConsumer"
+        "java.util.function.IntConsumer",
+        "java.lang.Object",
+        "java.lang.Integer"
     ],
     "lib.geom.light.LComplex" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.Comparator",
-        "java.util.function.ToLongFunction",
-        "java.io.Serializable"
+        "java.util.function.ToLongFunction"
     ],
-    "lib.datastructure.ints.IntOrderedSet" : [
-        "java.io.PrintStream",
-        "java.util.Objects",
-        "java.util.TreeSet"
+    "lib.util.sort.DependentSort" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.util.function.IntUnaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Class",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.Comparator"
     ],
     "lib.util.collections.ints.IntArrayList" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.Cloneable",
         "java.util.Arrays",
         "java.util.Iterator",
-        "java.util.function.IntPredicate"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.CloneNotSupportedException",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.algebra.ringlike.Field" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object",
         "java.util.function.UnaryOperator",
         "java.util.function.Supplier",
         "java.util.function.BinaryOperator"
     ],
     "lib.util.pair.LongPair3" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.datastructure.longs.LongSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
         "java.util.function.LongBinaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.function.LongPredicate"
     ],
     "lib.geom.light.LGeometry" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.Cloneable",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
         "java.util.Comparator",
-        "java.util.function.ToLongFunction",
-        "java.io.Serializable"
+        "java.util.function.ToLongFunction"
     ],
     "lib.math.number.ConvolutionGCD" : [
         "java.util.OptionalLong",
         "java.util.function.LongBinaryOperator",
-        "java.util.function.LongUnaryOperator"
+        "java.util.function.LongUnaryOperator",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.AssertionError",
+        "java.lang.String"
     ],
     "lib.datastructure.ints.IntDualSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.IntBinaryOperator"
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntBinaryOperator",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.util.collections.ints.IntLinkedList" : [
         "java.util.PrimitiveIterator",
         "java.util.function.Consumer",
+        "java.lang.UnsupportedOperationException",
         "java.util.ListIterator",
         "java.util.function.IntConsumer",
-        "java.util.NoSuchElementException"
+        "java.lang.Object",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.lang.Integer"
     ],
     "lib.graph.AdjacentList" : [
-        "java.util.Iterator"
+        "java.util.Iterator",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.Iterable"
     ],
     "lib.util.Longs" : [
-        "java.util.function.LongBinaryOperator"
+        "java.lang.Long",
+        "java.util.function.LongBinaryOperator",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
+    ],
+    "lib.geom.light.LCircle" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.Comparator",
+        "java.util.function.ToLongFunction"
     ],
     "lib.algebra.grouplike.SemiLattice" : [
         "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.BinaryOperator"
     ],
-    "lib.util.array.LongArrayFactory" : [
-        "java.util.HashSet",
+    "lib.persistent.PersistentUnionFind" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.IntToLongFunction",
+        "java.lang.reflect.Array",
         "java.util.Iterator",
-        "java.util.function.LongUnaryOperator",
+        "java.util.function.IntUnaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.util.function.IntFunction"
+    ],
+    "lib.util.array.LongArrayFactory" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
         "java.util.Collection",
-        "java.util.function.LongPredicate"
+        "java.util.HashSet",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.util.function.IntToLongFunction",
+        "java.lang.Long",
+        "java.util.function.LongUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.util.function.LongPredicate",
+        "java.lang.Number"
     ],
     "lib.util.array.CharArrays" : [
         "java.util.Arrays",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.function.IntFunction"
     ],
     "lib.datastructure.ints.IntRadixHeap" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.Cloneable",
         "java.util.Arrays",
         "java.util.Iterator",
-        "java.util.NoSuchElementException",
-        "java.util.function.IntPredicate"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.AssertionError",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.CloneNotSupportedException",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.NoSuchElementException"
+    ],
+    "lib.base.Const" : [
+        "java.lang.Object"
     ],
     "lib.datastructure.ints.IntRadixHeapMap" : [
         "java.lang.reflect.Array",
-        "java.util.NoSuchElementException"
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Class",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.IllegalArgumentException",
+        "java.util.NoSuchElementException",
+        "java.lang.Integer"
+    ],
+    "lib.io.ByteBuffer" : [
+        "java.lang.System",
+        "java.lang.Object"
     ],
     "lib.persistent.PersistentLongArray" : [
-        "java.util.RandomAccess",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.IntToLongFunction",
         "java.lang.reflect.Array",
         "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.util.function.IntToLongFunction",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.Class",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.NoSuchElementException",
         "java.util.function.IntFunction"
     ],
     "lib.datastructure.ModRangeAffineRangeSum" : [
         "java.util.OptionalLong",
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String",
+        "java.lang.Integer"
     ],
     "lib.graph.TopologicalSort" : [
         "java.util.Iterator",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
+    "lib.linear.ModMatrixFactory2" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.OptionalLong",
+        "java.lang.Math",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String"
+    ],
     "lib.algorithm.SWAG" : [
+        "java.lang.Object",
         "java.util.NoSuchElementException",
         "java.util.function.BinaryOperator"
     ],
     "lib.datastructure.ints.IntSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.IntBinaryOperator",
-        "java.util.function.IntPredicate"
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.persistent.PersistentLongSegmentTree" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
         "java.util.function.LongBinaryOperator",
-        "java.util.function.LongUnaryOperator"
+        "java.util.function.LongUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.tree.TreeUtil" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Object"
+    ],
+    "lib.datastructure.ints.IntOrderedMultiSet" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.util.Objects",
+        "java.util.List",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.graph.Graph" : [
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
+    "lib.algebra.ringlike.properties.MultiplicativeCommutative" : [
+        "java.lang.Object"
+    ],
+    "lib.util.sort.ints.IntInsertionSortUsingComparator" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
     "lib.tree.MergeTreeFoldPath" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
+        "java.lang.System",
         "java.util.function.IntConsumer",
         "java.util.function.IntBinaryOperator",
-        "java.util.NoSuchElementException",
+        "java.lang.Integer",
         "java.util.OptionalInt",
-        "java.util.function.IntPredicate"
+        "java.util.function.IntPredicate",
+        "java.lang.Iterable",
+        "java.lang.CloneNotSupportedException",
+        "java.lang.Math",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.lang.Cloneable",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.algebra.ringlike.Lattice" : [
+        "java.lang.Object",
         "java.util.function.BinaryOperator"
     ],
     "lib.util.function.IntBiConsumer" : [
-        "java.util.function.IntConsumer"
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntConsumer",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.math.number.Garner" : [
         "java.util.OptionalLong",
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String"
+    ],
+    "lib.util.function.IntComparator" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
     ],
     "lib.util.collections.ints.IntTreeMap" : [
-        "java.util.Objects",
-        "java.util.function.Consumer",
+        "java.lang.IllegalStateException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.NoSuchElementException",
         "java.util.ConcurrentModificationException"
+    ],
+    "lib.util.LongLinearFunction" : [
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.String"
+    ],
+    "lib.graph.AbstractEdge" : [
+        "java.lang.Long",
+        "java.lang.Comparable",
+        "java.lang.Object"
     ],
     "lib.geom.ConvexHull" : [
-        "java.util.HashSet",
         "java.util.Arrays",
-        "java.util.Comparator",
-        "java.io.Serializable"
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.util.HashSet",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
+        "java.util.Comparator"
     ],
     "lib.util.itertools.Permutation" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.invoke.MethodType",
         "java.util.Iterator",
-        "java.util.function.IntUnaryOperator"
+        "java.util.function.IntUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Iterable"
     ],
     "lib.tree.EulerTour" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Object"
+    ],
+    "lib.util.DoubleLinearFunction" : [
+        "java.lang.Object"
     ],
     "lib.persistent.PartiallyPersistentUnionFind" : [
-        "java.util.Objects",
-        "java.util.function.Consumer",
+        "java.lang.IllegalStateException",
         "java.util.Arrays",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.NoSuchElementException",
         "java.util.ConcurrentModificationException"
+    ],
+    "lib.algebra.ringlike.properties.AdditiveCommutative" : [
+        "java.lang.Object"
+    ],
+    "lib.datastructure.longs.LongRangeAddRangeSum" : [
+        "java.lang.Long",
+        "java.lang.System",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.Integer"
     ],
     "lib.datastructure.longs.LongOrderedMultiSet" : [
         "java.util.Objects",
-        "java.util.OptionalLong"
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.OptionalLong",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.lang.Integer"
     ],
     "lib.util.pair.IntLongPair" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.lang.Integer"
     ],
     "lib.algorithm.ints.IntXorBases" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.Cloneable",
         "java.util.Arrays",
         "java.util.Iterator",
-        "java.util.function.IntPredicate"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.lang.CloneNotSupportedException",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.util.collections.CharDeque" : [
-        "java.util.PrimitiveIterator",
-        "java.util.Objects",
-        "java.util.function.Consumer",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Iterator",
-        "java.util.NoSuchElementException"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Iterable",
+        "java.lang.FunctionalInterface",
+        "java.util.Objects",
+        "java.util.PrimitiveIterator",
+        "java.util.function.Consumer",
+        "java.lang.invoke.MethodType",
+        "java.lang.Character",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.NoSuchElementException",
+        "java.lang.Byte"
     ],
     "lib.util.collections.longs.LongDeque" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
         "java.util.PrimitiveIterator",
         "java.util.OptionalLong",
-        "java.util.Arrays",
+        "java.lang.invoke.MethodType",
         "java.util.function.IntToLongFunction",
-        "java.util.Iterator",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.NoSuchElementException"
     ],
     "lib.util.array.IntArrayFactory" : [
-        "java.util.HashSet",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.Iterator",
         "java.util.function.IntUnaryOperator",
+        "java.lang.invoke.MethodHandles",
         "java.util.Collection",
         "java.util.function.IntBinaryOperator",
-        "java.util.function.IntPredicate"
+        "java.lang.Integer",
+        "java.util.function.IntPredicate",
+        "java.util.HashSet",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Number"
     ],
     "lib.algorithm.TwoSAT" : [
-        "java.util.Arrays"
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.UnsupportedOperationException",
+        "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.algebra.ringlike.properties.AdditiveUnital" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
+    "lib.util.array.LongArrays" : [
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.datastructure.DisjointSetUnion" : [
-        "java.util.Arrays"
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.Arrays",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.util.pair.DoubleIntPair" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.util.function.ToDoubleFunction",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.Comparator"
     ],
     "lib.datastructure.longs.LongDualSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.LongBinaryOperator"
+        "java.util.function.LongBinaryOperator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.io.InputVerifier" : [
-        "java.util.Objects",
-        "java.util.regex.Matcher",
+        "java.lang.Throwable",
+        "java.lang.CharSequence",
+        "java.lang.Double",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.io.IOException",
+        "java.lang.RuntimeException",
+        "java.lang.IllegalArgumentException",
+        "java.lang.AutoCloseable",
+        "java.lang.Integer",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.util.regex.Matcher",
+        "java.lang.Character",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.regex.Pattern",
         "java.io.InputStream"
     ],
     "lib.tree.ForestBuilder" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.AssertionError",
+        "java.lang.String",
+        "java.lang.NullPointerException"
+    ],
+    "lib.util.function.LongComparator" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
     ],
     "lib.datastructure.ints.IntWaveletMatrixBuilder" : [
         "java.io.PrintStream",
-        "java.util.Objects",
         "java.util.Arrays",
         "java.util.Iterator",
-        "java.util.Map",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.util.Set",
         "java.util.HashMap",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.util.Map",
+        "java.lang.Math",
+        "java.lang.Object",
         "java.math.BigInteger",
-        "java.util.BitSet"
+        "java.lang.String",
+        "java.util.BitSet",
+        "java.lang.invoke.StringConcatFactory",
+        "java.lang.Byte"
     ],
     "lib.datastructure.OrderedSet" : [
-        "java.util.Comparator"
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.Object",
+        "java.lang.Comparable",
+        "java.lang.String",
+        "java.util.Comparator",
+        "java.lang.Integer"
     ],
     "lib.util.function.IntLongToLongFunction" : [
-        "java.util.function.LongUnaryOperator"
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.util.function.LongUnaryOperator",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String"
+    ],
+    "lib.geom.Polygon" : [
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Arrays",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
+        "java.util.Comparator"
     ],
     "lib.util.pair.LongEntry" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.math.number.ChineseRemainderTheorem" : [
+        "java.util.OptionalLong",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.AssertionError",
+        "java.lang.String"
     ],
     "lib.geom.Geometry" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.Comparator",
-        "java.io.Serializable"
+        "java.lang.Cloneable",
+        "java.lang.Double",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.Enum",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.Class",
+        "java.lang.String",
+        "java.util.Comparator"
     ],
     "lib.util.Range" : [
-        "java.util.Objects",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.Comparator",
         "java.util.LinkedList",
         "java.util.function.ToLongFunction"
     ],
+    "lib.tree.Rerooting" : [
+        "java.lang.FunctionalInterface",
+        "java.util.Arrays",
+        "java.lang.Object"
+    ],
     "lib.math.number.ModArithmetic" : [
-        "java.util.OptionalLong"
+        "java.util.OptionalLong",
+        "java.lang.Math",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.algorithm.longs.LongSWAG" : [
         "java.util.function.LongBinaryOperator",
+        "java.lang.Object",
         "java.util.NoSuchElementException"
     ],
     "lib.util.IterableIterator" : [
-        "java.util.Iterator"
+        "java.util.Iterator",
+        "java.lang.Object",
+        "java.lang.Iterable"
     ],
     "lib.datastructure.longs.LongRangeAddRangeGCD" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Long",
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.io.InputVerificationException" : [
+        "java.lang.Object",
+        "java.lang.RuntimeException",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.algorithm.ints.IntRemovablePrioritySum" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.Objects",
+        "java.util.PrimitiveIterator",
+        "java.util.List",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.linear.DoubleMatrix" : [
+        "java.lang.Math",
+        "java.lang.ArithmeticException",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.Integer"
+    ],
+    "lib.base.PrimitiveComparable" : [
+        "java.lang.Object"
     ],
     "lib.util.array.CharArrayFactory" : [
-        "java.util.Collection"
+        "java.lang.Character",
+        "java.util.Collection",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.datastructure.longs.LongObjLazySegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.function.LongBinaryOperator",
-        "java.util.function.LongPredicate",
-        "java.util.function.BinaryOperator"
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.util.function.BinaryOperator",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.function.LongPredicate"
+    ],
+    "lib.math.Polynomial" : [
+        "java.lang.Cloneable",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.Double",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.CloneNotSupportedException",
+        "java.io.Serializable",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.Comparator"
     ],
     "lib.graph.GraphUtil" : [
         "java.util.Arrays",
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.datastructure.ints.IntRangeAffineRangeSum" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.Object",
+        "java.lang.Integer"
     ],
     "lib.datastructure.longs.LongCommutativeDualSegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.LongBinaryOperator"
+        "java.util.function.LongBinaryOperator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.algebra.grouplike.BoundedSemiLattice" : [
         "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.Supplier",
         "java.util.function.BinaryOperator"
     ],
     "lib.util.IDManager" : [
+        "java.lang.Object",
         "java.util.HashMap",
+        "java.lang.Integer",
         "java.util.OptionalInt"
     ],
     "lib.util.array.DoubleArrays" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
-        "java.util.function.DoubleBinaryOperator",
         "java.util.function.IntToDoubleFunction",
-        "java.util.function.DoublePredicate",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.DoubleUnaryOperator",
+        "java.util.function.DoubleBinaryOperator",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.util.function.DoublePredicate",
         "java.util.function.IntFunction"
     ],
     "lib.util.array.ObjArrayFactory" : [
         "java.util.Arrays",
         "java.lang.reflect.Array",
+        "java.lang.Class",
+        "java.lang.Object",
         "java.util.function.IntFunction"
     ],
     "lib.datastructure.ints.IntObjLazySegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.IntBinaryOperator",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
         "java.util.function.IntPredicate",
-        "java.util.function.BinaryOperator"
+        "java.util.function.BinaryOperator",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.util.function.ObjIntToObjFunction" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
     ],
     "lib.graph.Prim" : [
         "java.util.OptionalLong",
         "java.util.Iterator",
+        "java.lang.Long",
         "java.util.PriorityQueue",
         "java.util.Collection",
+        "java.lang.Object",
+        "java.lang.Comparable",
         "java.util.ArrayList"
     ],
     "lib.algorithm.Doubling" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.function.LongBinaryOperator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntPredicate",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
         "java.util.function.LongPredicate",
-        "java.util.function.IntPredicate"
+        "java.lang.String"
     ],
     "lib.algebra.grouplike.SemiGroup" : [
         "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.BinaryOperator"
     ],
     "lib.graph.GridUtil" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String"
     ],
     "lib.datastructure.longs.LongRadixHeapMap" : [
         "java.lang.reflect.Array",
+        "java.lang.Long",
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Class",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.IllegalArgumentException",
         "java.util.NoSuchElementException"
     ],
     "lib.util.collections.ints.IntPriorityQueue" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.System",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.NoSuchElementException",
         "java.util.OptionalInt"
     ],
+    "lib.datastructure.BitVector" : [
+        "java.lang.Object"
+    ],
     "lib.datastructure.longs.LongOrderedMap" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.Collection",
+        "java.util.Set",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.ArrayList",
         "java.util.Objects",
         "java.util.PrimitiveIterator",
-        "java.util.Iterator",
-        "java.util.Collection",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
         "java.util.Optional",
-        "java.util.Set",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.ArrayDeque",
-        "java.util.LinkedHashSet",
-        "java.util.ArrayList"
+        "java.util.LinkedHashSet"
+    ],
+    "lib.algorithm.ConvexHullTrick" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.Collection",
+        "java.util.Set",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.ArrayList",
+        "java.util.Objects",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.util.Optional",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.ArrayDeque",
+        "java.util.LinkedHashSet"
     ],
     "lib.math.number.ModFactorial" : [
         "java.util.OptionalLong",
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String"
     ],
     "lib.graph.Dijkstra" : [
         "java.util.Arrays",
         "java.util.Iterator",
+        "java.lang.Long",
         "java.util.PriorityQueue",
+        "java.lang.Comparable",
+        "java.lang.Object",
+        "java.lang.AssertionError",
         "java.util.ArrayList"
     ],
     "lib.tree.EulerTourLCA" : [
-        "java.util.Arrays"
+        "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object"
+    ],
+    "lib.datastructure.ints.IntRandomizedBinarySearchTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.UnsupportedOperationException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.util.Objects",
+        "java.util.List",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.util.sort.longs.LongInsertionSort" : [
+        "java.lang.Object"
+    ],
+    "lib.util.collections.longs.LongHashMap" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.Collection",
+        "java.util.Set",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.ArrayList",
+        "java.util.Objects",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.util.Optional",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
+        "java.util.ArrayDeque",
+        "java.util.LinkedHashSet"
+    ],
+    "lib.datastructure.ints.IntBinaryTrie2" : [
+        "java.lang.Object",
+        "java.lang.AssertionError",
+        "java.lang.Integer"
     ],
     "lib.util.collections.Deque" : [
-        "java.util.RandomAccess",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.lang.reflect.Array",
         "java.util.Iterator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.RandomAccess",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Class",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
         "java.util.NoSuchElementException",
         "java.util.function.IntFunction"
     ],
     "lib.algorithm.longs.LongXorBases" : [
-        "java.util.PrimitiveIterator",
+        "java.lang.IndexOutOfBoundsException",
         "java.util.Arrays",
-        "java.util.Iterator"
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Iterable",
+        "java.util.PrimitiveIterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.algorithm.ints.IntArraySWAG" : [
         "java.util.function.IntBinaryOperator",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.IllegalArgumentException",
         "java.util.NoSuchElementException"
     ],
     "lib.math.number.DiscreteLogarithm" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.BiFunction",
+        "java.util.HashMap",
+        "java.lang.Integer",
+        "java.util.function.BinaryOperator",
+        "java.util.ArrayList",
+        "java.util.function.LongConsumer",
         "java.util.Objects",
         "java.util.function.Consumer",
         "java.util.OptionalLong",
-        "java.util.Iterator",
+        "java.lang.invoke.MethodType",
+        "java.lang.Long",
+        "java.lang.invoke.CallSite",
         "java.util.Map",
-        "java.util.function.BiFunction",
         "java.util.function.BiConsumer",
-        "java.util.HashMap",
-        "java.util.function.BinaryOperator",
-        "java.util.ArrayList",
-        "java.util.function.LongConsumer"
+        "java.lang.Math",
+        "java.lang.Object",
+        "java.lang.ArithmeticException",
+        "java.lang.String"
+    ],
+    "lib.util.sort.ints.IntMergeSort" : [
+        "java.lang.System",
+        "java.lang.Math",
+        "java.lang.Object"
     ],
     "lib.datastructure.RangeOrderedMultiSet" : [
         "java.util.PrimitiveIterator",
-        "java.util.NoSuchElementException"
+        "java.lang.Object",
+        "java.lang.RuntimeException",
+        "java.lang.String",
+        "java.util.NoSuchElementException",
+        "java.lang.Integer"
+    ],
+    "lib.tree.Centroid" : [
+        "java.util.Arrays",
+        "java.lang.Object"
+    ],
+    "lib.datastructure.longs.LongBinaryIndexedTree" : [
+        "java.lang.Long",
+        "java.lang.System",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.Integer"
     ],
     "lib.algebra.grouplike.Group" : [
-        "java.util.Objects",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
         "java.util.function.UnaryOperator",
         "java.util.function.Supplier",
-        "java.util.function.BinaryOperator"
+        "java.util.function.BinaryOperator",
+        "java.util.Objects",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String"
+    ],
+    "lib.util.collections.ints.IntHashMap" : [
+        "java.lang.UnsupportedOperationException",
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.util.Iterator",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Integer",
+        "java.lang.Iterable",
+        "java.util.Objects",
+        "java.util.PrimitiveIterator",
+        "java.util.List",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
     ],
     "lib.math.LinearSieve" : [
         "java.util.Arrays",
+        "java.lang.Math",
+        "java.lang.Object",
         "java.util.OptionalInt",
         "java.util.ArrayList"
     ],
     "lib.datastructure.longs.LongLazySegmentTree" : [
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
         "java.util.Arrays",
         "java.util.function.LongBinaryOperator",
+        "java.lang.System",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.IllegalArgumentException",
+        "java.lang.Integer",
+        "java.lang.FunctionalInterface",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.Object",
+        "java.lang.StringBuilder",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.function.LongPredicate"
     ],
     "lib.util.pair.Pair3" : [
-        "java.util.Objects"
+        "java.util.Objects",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory"
+    ],
+    "lib.datastructure.longs.LongBinaryTrie" : [
+        "java.lang.Long",
+        "java.lang.Object",
+        "java.lang.AssertionError"
     ],
     "lib.algebra.ringlike.Ring" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object",
         "java.util.function.UnaryOperator",
         "java.util.function.Supplier",
         "java.util.function.BinaryOperator"
     ],
+    "lib.util.function.CharConsumer" : [
+        "java.lang.FunctionalInterface",
+        "java.lang.Object"
+    ],
     "lib.persistent.PersistentIntSegmentTree" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
         "java.util.function.IntUnaryOperator",
-        "java.util.function.IntBinaryOperator"
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
+        "java.util.function.IntBinaryOperator",
+        "java.lang.Object",
+        "java.lang.String"
     ],
     "lib.util.pair.IntPair" : [
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.ToIntFunction",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.lang.invoke.StringConcatFactory",
         "java.util.Comparator"
+    ],
+    "lib.base.ArithmeticOperations" : [
+        "java.lang.Object"
     ],
     "lib.datastructure.OrderedMultiSet" : [
-        "java.util.Comparator"
+        "java.lang.IndexOutOfBoundsException",
+        "java.lang.Comparable",
+        "java.lang.Object",
+        "java.lang.String",
+        "java.util.Comparator",
+        "java.lang.Integer"
+    ],
+    "lib.algebra.grouplike.properties.Idempotent" : [
+        "java.lang.Object"
     ],
     "lib.algebra.grouplike.Magma" : [
+        "java.lang.FunctionalInterface",
         "java.util.Objects",
+        "java.lang.invoke.LambdaMetafactory",
+        "java.lang.invoke.MethodHandle",
+        "java.lang.invoke.MethodType",
+        "java.lang.invoke.CallSite",
+        "java.lang.invoke.MethodHandles",
         "java.util.function.BiFunction",
+        "java.lang.Object",
+        "java.lang.String",
         "java.util.function.BinaryOperator"
     ],
     "lib.datastructure.ints.IntSparseTable" : [
-        "java.util.function.IntBinaryOperator"
+        "java.util.function.IntBinaryOperator",
+        "java.lang.Object"
     ]
 }
 

@@ -61,7 +61,7 @@ public class MonotoneConvexHullTrick {
         lines.addFirst(f);
     }
     private static boolean noneed(Func lf, Func mf, Func rf) {
-        return (lf.b - mf.b) / (mf.a - lf.a) <= (mf.b - rf.b) / (rf.a - mf.a);
+        return (lf.b - mf.b) / (mf.a - lf.a) >= (mf.b - rf.b) / (rf.a - mf.a);
     }
     private boolean incrFlg = false;
     private boolean decrFlg = false;

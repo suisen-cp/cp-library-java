@@ -25,21 +25,21 @@ public class IntRemovablePrioritySum {
     public void subK(int v) {this.k -= v;}
     public void add(int v) {
         if (topk.size() == 0) {
-            other.insertKey(v);
+            other.add(v);
         } else {
             if (isDescending) {
                 if (topk.kthElement(0) <= v) {
-                    topk.insertKey(v);
+                    topk.add(v);
                     sumK += v;
                 } else {
-                    other.insertKey(v);
+                    other.add(v);
                 }
             } else {
                 if (topk.kthElement(topk.size() - 1) >= v) {
-                    topk.insertKey(v);
+                    topk.add(v);
                     sumK += v;
                 } else {
-                    other.insertKey(v);
+                    other.add(v);
                 }
             }
         }
@@ -51,16 +51,16 @@ public class IntRemovablePrioritySum {
             if (isDescending) {
                 while (d --> 0) {
                     int v = topk.kthElement(0);
-                    topk.eraseKey(v);
+                    topk.remove(v);
                     sumK -= v;
-                    other.insertKey(v);
+                    other.add(v);
                 }
             } else {
                 while (d --> 0) {
                     int v = topk.kthElement(topk.size() - 1);
-                    topk.eraseKey(v);
+                    topk.remove(v);
                     sumK -= v;
-                    other.insertKey(v);
+                    other.add(v);
                 }
             }
         } else if (size < k){
@@ -68,16 +68,16 @@ public class IntRemovablePrioritySum {
             if (isDescending) {
                 while (d --> 0 && other.size() > 0) {
                     int v = other.kthElement(other.size() - 1);
-                    other.eraseKey(v);
+                    other.remove(v);
                     sumK += v;
-                    topk.insertKey(v);
+                    topk.add(v);
                 }
             } else {
                 while (d --> 0 && other.size() > 0) {
                     int v = other.kthElement(0);
-                    other.eraseKey(v);
+                    other.remove(v);
                     sumK += v;
-                    topk.insertKey(v);
+                    topk.add(v);
                 }
             }
         }
@@ -85,9 +85,9 @@ public class IntRemovablePrioritySum {
     }
     public void remove(int v) {
         if (other.count(v) > 0) {
-            other.eraseKey(v);
+            other.remove(v);
         } else if (topk.count(v) > 0) {
-            topk.eraseKey(v);
+            topk.remove(v);
             sumK -= v;
         }
     }

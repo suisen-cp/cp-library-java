@@ -1,0 +1,19 @@
+package ${PKG};
+
+import lib.io.ExtendedScanner;
+import lib.io.FastPrintStream;
+
+public class ${CLASS_NAME} {
+    public static void main(String[] args) throws Exception {
+        ExtendedScanner sc = new ExtendedScanner();
+        FastPrintStream pw = new FastPrintStream();
+        solve(sc, pw);
+        sc.close();
+        pw.flush();
+        pw.close();
+    }
+
+    public static void solve(ExtendedScanner sc, FastPrintStream pw) {
+        
+    }
+}

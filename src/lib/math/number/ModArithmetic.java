@@ -209,12 +209,11 @@ public abstract class ModArithmetic {
         }
         return comb;
     }
-    public final long naiveComb(long n, long r) {
+    public final long naiveComb(long n, int r) {
         if (r < 0 || r > n) return 0;
-        r = Math.min(r, n - r);
         long num = 1, den = 1;
         for (int i = 0; i < r; i++) {
-            num = mul(num, n - i);
+            num = mul(num, mod(n - i));
             den = mul(den, i + 1);
         }
         return div(num, den);
@@ -224,5 +223,8 @@ public abstract class ModArithmetic {
         long res = 1;
         for (long i = 0; i < r; i++) res = mul(res, n - i);
         return res;
+    }
+    public final long naiveFactorial(int n) {
+        return naivePerm(n, n);
     }
 }
