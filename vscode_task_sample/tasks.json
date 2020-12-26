@@ -1,7 +1,5 @@
 
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
 
     "tasks": [
@@ -13,7 +11,7 @@
                 "${file}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}"
             },
             "group": {
                 "kind": "build",
@@ -31,7 +29,7 @@
             "type": "shell",
             "command": "(dependency_expander/scripts/compile_library.sh; dependency_expander/scripts/build_dependency_graph.sh)",
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}"
             },
             "presentation": {
                 "echo": false,
@@ -48,7 +46,7 @@
                 "-v", "contest/templates/Simple.variables.sh", "contest/templates/Simple.template", "${input:gen_path}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}"
             },
             "presentation": {
                 "echo": false,
@@ -67,7 +65,7 @@
                 "${input:gen_from}", "${input:gen_to}"
             ],
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}"
             },
             "presentation": {
                 "echo": false,
@@ -81,7 +79,7 @@
             "type": "shell",
             "command": "for a in {A..Z}; do rm -f \"${input:rm_path}/${a}.java\"; done",
             "options": {
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}"
             },
             "presentation": {
                 "echo": false,
@@ -97,7 +95,7 @@
             "args": [
                 "${input:cm}"
             ]
-        },
+        }
     ],
     "inputs": [
         {
@@ -123,6 +121,6 @@
             "description": "directory",
             "default": "contest/src",
             "type": "promptString"
-        },
+        }
     ]
 }
