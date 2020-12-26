@@ -3,7 +3,7 @@ public class ${CLASS_NAME} {
         int ${VAR} = ${VAR_VALUE};
         int ${VARVAR} = ${VAR} * 2;
         int ${VARVARVAR} = ${VAR_VALUE} * 3;
-        String dir = "${DIR}";
-        String libPath = "${LIBRARY_PATH}";
+        String dir = \"${DIR}\";
+        String libPath = \"${LIBRARY_PATH}\";
     }
 }
