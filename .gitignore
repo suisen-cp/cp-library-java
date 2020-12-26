@@ -1,2 +1,7 @@
 .idea/
 cp-library-java.iml
+
+contest/src/*
+
+.*out/
+test/
