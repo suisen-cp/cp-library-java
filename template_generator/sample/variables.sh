@@ -1,7 +1,0 @@
-VAR="n"
-VARVAR="${VAR}${VAR}"
-VARVARVAR="${VARVAR}${VAR}"
-
-VAR_VALUE="3"
-
-LIBRARY_PATH="${DIR}/library"

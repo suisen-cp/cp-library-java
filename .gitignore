@@ -2,7 +2,9 @@
 .vscode/
 cp-library-java.iml
 
-contest/src/
+template_generator/
+dependency_expander/
+contest/
 
 out/
 test/
