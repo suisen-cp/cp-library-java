@@ -49,6 +49,7 @@ public class MonotoneConvexHullTrick {
             if (!noneed(lf, mf, f)) break;
             lines.removeLast();
         }
+        checkOne(f);
         lines.addLast(f);
     }
     private void addFirst(Func f) {
@@ -58,10 +59,17 @@ public class MonotoneConvexHullTrick {
             if (!noneed(f, mf, rf)) break;
             lines.removeFirst();
         }
+        checkOne(f);
         lines.addFirst(f);
     }
+    private void checkOne(Func f) {
+        if (lines.size() == 1) {
+            Func last = lines.getLast();
+            if (f.a == last.a && f.b < last.b) lines.removeLast();
+        }
+    }
     private static boolean noneed(Func lf, Func mf, Func rf) {
-        return (lf.b - mf.b) / (mf.a - lf.a) >= (mf.b - rf.b) / (rf.a - mf.a);
+        return (double) (lf.b - mf.b) / (mf.a - lf.a) >= (double) (mf.b - rf.b) / (rf.a - mf.a);
     }
     private boolean incrFlg = false;
     private boolean decrFlg = false;

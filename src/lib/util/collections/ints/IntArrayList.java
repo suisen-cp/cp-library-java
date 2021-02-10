@@ -61,6 +61,14 @@ public final class IntArrayList implements Iterable<Integer>, Cloneable {
         return copy;
     }
     public PrimitiveIterator.OfInt iterator() {return new IntArrayListIterator();}
+    public String toString() {
+        if (tail == 0) return "[]";
+        StringBuilder sb = new StringBuilder().append('[');
+        for (int i = 0; i < tail; i++) {
+            sb.append(a[i]).append(i == tail - 1 ? ']' : ',');
+        }
+        return sb.toString();
+    }
     private class IntArrayListIterator implements PrimitiveIterator.OfInt {
         private int i = 0;
         public boolean hasNext() {return i < tail;}

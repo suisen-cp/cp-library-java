@@ -1,164 +1,308 @@
 package lib.datastructure;
 
-import java.util.NoSuchElementException;
+import java.util.OptionalInt;
 import java.util.PrimitiveIterator;
 
-public class RangeOrderedSet {
+/**
+ * Fast set for the limited range.
+ */
+public class RangeOrderedSet implements Iterable<Integer> {
+    private static final int PRESENT = 1;
+    private static final int ABSENT = 0;
+
     final int[] cnt;
+    final int maxExclusive;
     final int n;
     final int bias;
 
-    public RangeOrderedSet(final int l, final int r) {
+    /**
+     * @param l left bound of range (<b>inclusive</b>)
+     * @param r right bound of range (<b>exclusive</b>)
+     */
+    public RangeOrderedSet(int l, int r) {
         this.bias = -l;
-        int w = r - l;
-        int nn = 1; while (nn < w) nn <<= 1;
-        this.n = nn;
+        this.n = ceilPow2(r - l);
+        this.maxExclusive = inflate(r);
         this.cnt = new int[n << 1];
     }
 
-    public void add(int i) {
-        if (contains(i)) return;
-        update(bias + i, 1);
+    // * private methods *
+
+    private static int ceilPow2(int n) {
+        int k = 1;
+        while (k < n) k <<= 1;
+        return k;
     }
 
-    public void remove(int i) {
-        if (!contains(i)) return;
-        update(bias + i, 0);
+    private void updateCounter(int element, int num) {
+        int k = inflate(element) + n;
+        cnt[k] = num;
+        while ((k >>= 1) > 0) cnt[k] = cnt[k << 1] + cnt[(k << 1) | 1];
     }
 
-    public int pollFirst() {
-        int ret = first();
-        remove(ret);
-        return ret;
+    private int inflate(int element) {
+        return element + bias;
+    }
+    private int deflate(int index) {
+        return index - bias;
     }
 
-    public int pollLast() {
-        int ret = last();
-        remove(ret);
-        return ret;
+    private int clampLeft(int element) {
+        return Math.max(0, inflate(element));
+    }
+    private int clampRight(int element) {
+        return Math.min(maxExclusive, inflate(element));
     }
 
-    public boolean contains(int i) {
-        return cnt[bias + i + n] > 0;
+    private boolean indexOutOfRange(int index) {
+        return index < 0 || index >= maxExclusive;
+    }
+    private boolean elementOutOfRange(int element) {
+        return indexOutOfRange(inflate(element));
+    }
+    private void elementRangeCheck(int element) {
+        if (elementOutOfRange(element)) {
+            throw new AssertionError(
+                String.format("%d is not in the range [%d, %d)", element, deflate(0), deflate(maxExclusive))
+            );
+        }
     }
 
-    public int first() {
-        if (cnt[1] == 0) throw new NoSuchElementException();
+    // * public methods *
+
+    /**
+     * @return {@code true} if this set contains the given element
+     */
+    public boolean contains(int element) {
+        int index = inflate(element);
+        if (indexOutOfRange(index)) return false;
+        return cnt[index + n] > 0;
+    }
+    /**
+     * Adds the given element to this set.
+     * @param element the elemet to be added to this set
+     * @return {@code true} if this set does not contain the given element
+     */
+    public boolean add(int element) {
+        elementRangeCheck(element);
+        if (contains(element)) {
+            return false;
+        } else {
+            updateCounter(element, PRESENT);
+            return true;
+        }
+    }
+    /**
+     * Removes the given element from this set.
+     * @param element the elemet to be removed from this set
+     * @return {@code true} if this set contains the given element
+     */
+    public boolean remove(int element) {
+        if (contains(element)) {
+            updateCounter(element, ABSENT);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    /**
+     * Removes the specified element from this set if present.
+     * @param optionalElement the optional elemet to be removed from this set
+     * @return {@code true} if this set contains the given element
+     */
+    public boolean removeIfPresent(OptionalInt optionalElement) {
+        if (optionalElement.isPresent()) {
+            remove(optionalElement.getAsInt());
+            return true;
+        } else {
+            return false;
+        }
+    }
+    /**
+     * Removes the smallest element from this set.
+     * @return the smallest element, or {@code OptionalInt.empty()} if there is no such element.
+     */
+    public OptionalInt removeFirst() {
+        OptionalInt elem = first();
+        removeIfPresent(elem);
+        return elem;
+    }
+    /**
+     * Removes the largest element from this set if present.
+     * @return the largest element, or {@code OptionalInt.empty()} if there is no such element.
+     */
+    public OptionalInt removeLast() {
+        OptionalInt elem = last();
+        removeIfPresent(elem);
+        return elem;
+    }
+    /**
+     * Returns the smallest element in this set, or {@code OptionalInt.empty()} if there is no such element.
+     * @return the smallest element, or {@code OptionalInt.empty()} if there is no such element.
+     */
+    public OptionalInt first() {
+        if (isEmpty()) OptionalInt.empty();
         int k = 1;
         while (k < n) {
             k <<= 1;
             if (cnt[k] == 0) k |= 1;
         }
-        return k - n - bias;
+        return OptionalInt.of(deflate(k - n));
     }
-
-    public int last() {
-        if (cnt[1] == 0) throw new NoSuchElementException();
+    /**
+     * Returns the largest element in this set, or {@code OptionalInt.empty()} if there is no such element.
+     * @return the largest element, or {@code OptionalInt.empty()} if there is no such element.
+     */
+    public OptionalInt last() {
+        if (isEmpty()) OptionalInt.empty();
         int k = 1;
         while (k < n) {
             k <<= 1;
             if (cnt[k | 1] > 0) k |= 1;
         }
-        return k - n - bias;
+        return OptionalInt.of(deflate(k - n));
     }
-
-    public int kthElement(int k) {
-        if (cnt[1] <= k) throw new NoSuchElementException();
-        int i = 1;
-        int s = 0;
-        k++;
-        while (i < n) {
-            i <<= 1;
-            if (s + cnt[i] < k) {
-                s += cnt[i];
-                i |= 1;
+    /**
+     * Returns the k-th smallest element in this set, or {@code OptionalInt.empty()} if there is no such element.
+     * @param k 0-indexed
+     * @return the k-th smallest element, or {@code OptionalInt.empty()} if there is no such element.
+     */
+    public OptionalInt kthElement(int index) {
+        if (size() <= index) OptionalInt.empty();
+        int k = 1;
+        int sum = 0;
+        index++;
+        while (k < n) {
+            k <<= 1;
+            if (sum + cnt[k] < index) {
+                sum += cnt[k];
+                k |= 1;
             }
         }
-        return i - n - bias;
+        return OptionalInt.of(deflate(k - n));
     }
-
-    public int lower(int i) {
-        int r = bias + i + n;
-        r /= r & -r;
-        while (cnt[--r] <= 0) {
-            if (r == 0) throw new NoSuchElementException();
-            r /= r & -r;
-        }
-        while (r < n) {
-            r <<= 1;
-            if (cnt[r | 1] > 0) r |= 1;
-        }
-        return r - n - bias;
+    /**
+     * Returns the greatest element in this set strictly less than the given element, or {@code OptionalInt.empty()} if there is no such element.
+     * @param element
+     * @return the greatest element in this set strictly less than the given element, or {@code OptionalInt.empty()} if there is no such element
+     */
+    public OptionalInt lower(int element) {
+        int r = clampRight(element);
+        if (indexOutOfRange(r - 1)) return OptionalInt.empty();
+        r += n;
+        do {
+            r--;
+            while (r > 1 && (r & 1) == 1) r >>= 1;
+            if (cnt[r] > 0) {
+                while (r < n) if (cnt[r = r << 1 | 1] == 0) r ^= 1;
+                return OptionalInt.of(deflate(r - n));
+            }
+        } while ((r & -r) != r);
+        return OptionalInt.empty();
     }
-
-    public int floor(int i) {return contains(i) ? i : lower(i);}
-
-    public int higher(int i) {
-        int l = bias + i + 1 + n;
-        l /= l & -l;
-        while (cnt[l] <= 0) {
-            if (++l == n << 1) throw new NoSuchElementException();
-            l /= l & -l;
-        }
-        while (l < n) {
-            l <<= 1;
-            if (cnt[l] == 0) l |= 1;
-        }
-        return l - n - bias;
+    /**
+     * Returns the greatest element in this set less than or equal to the given element, or {@code OptionalInt.empty()} if there is no such element.
+     * @param element
+     * @return the greatest element in this set less than or equal to the given element, or {@code OptionalInt.empty()} if there is no such element
+     */
+    public OptionalInt floor(int element) {return lower(element + 1);}
+    /**
+     * Returns the least element in this set strictly greater than the given element, or {@code OptionalInt.empty()} if there is no such element.
+     * @param element
+     * @return the least element in this set strictly greater than the given element, or {@code OptionalInt.empty()} if there is no such element
+     */
+    public OptionalInt higher(int element) {return ceiling(element + 1);}
+    /**
+     * Returns the least element in this set greater than or equal to the given element, or {@code OptionalInt.empty()} if there is no such element.
+     * @param element
+     * @return the least element in this set greater than or equal to the given element, or {@code OptionalInt.empty()} if there is no such element
+     */
+    public OptionalInt ceiling(int element) {
+        int l = clampLeft(element);
+        if (indexOutOfRange(l)) return OptionalInt.empty();
+        l += n;
+        do {
+            while ((l & 1) == 0) l >>= 1;
+            if (cnt[l] != 0) {
+                while (l < n) if (cnt[l = l << 1] == 0) l |= 1;
+                return OptionalInt.of(deflate(l - n));
+            }
+            l++;
+        } while ((l & -l) != l);
+        return OptionalInt.empty();
     }
-
-    public int ceiling(int i) {return contains(i) ? i : higher(i);}
-
-    public boolean isEmpty() {return cnt[1] == 0;}
-
+    /**
+     * @return the number of elements in this set
+     */
     public int size() {return cnt[1];}
-
+    /**
+     * @param l left bound of the range (<b>inclusive</b>)
+     * @param r right bound of the range (<b>exclusive</b>)
+     * @return the number of elements in the range [l, r)
+     */
     public int count(int l, int r) {
-        l += bias; r += bias;
-        if (l < 0 || r > n) throw new OutOfRangeException("Out of Range.");
-        l += n; r += n;
         int res = 0;
-        while (r > l) {
+        for (l = clampLeft(l) + n, r = clampRight(r) + n; r > l; l >>= 1, r >>= 1) {
             if ((l & 1) == 1) res += cnt[l++];
             if ((r & 1) == 1) res += cnt[--r];
-            l >>= 1; r >>= 1;
         }
         return res;
     }
+    /**
+     * @return {@code true} if this set contains no elements
+     */
+    public boolean isEmpty() {return size() == 0;}
 
-    void update(int i, final int c) {
-        i += n;
-        cnt[i] = c;
-        while ((i >>= 1) > 0) cnt[i] = cnt[i << 1] + cnt[(i << 1) | 1];
+    private PrimitiveIterator.OfInt iterator(OptionalInt from) {
+        return new PrimitiveIterator.OfInt(){
+            private OptionalInt pre = OptionalInt.empty();
+            private OptionalInt cur = from;
+            public boolean hasNext() {return cur.isPresent();}
+            public int nextInt() {
+                int ret = (pre = cur).getAsInt();
+                cur = higher(ret);
+                return ret;
+            }
+            public void remove() {removeIfPresent(pre);}
+        };
     }
+    public PrimitiveIterator.OfInt iterator() {return iterator(first());}
+    public PrimitiveIterator.OfInt iteratorFromKthElement(int k) {return iterator(kthElement(k));}
+    public PrimitiveIterator.OfInt iteratorFromCeilingElement(int element) {return iterator(ceiling(element));}
+    public PrimitiveIterator.OfInt iteratorFromHigherElement(int element) {return iterator(higher(element));}
+    public PrimitiveIterator.OfInt iteratorFromFloorElement(int element) {return iterator(floor(element));}
+    public PrimitiveIterator.OfInt iteratorFromLowerElement(int element) {return iterator(lower(element));}
+    
+    private PrimitiveIterator.OfInt descendingIterator(OptionalInt from) {
+        return new PrimitiveIterator.OfInt(){
+            private OptionalInt pre = OptionalInt.empty();
+            private OptionalInt cur = from;
+            public boolean hasNext() {return cur.isPresent();}
+            public int nextInt() {
+                int ret = (pre = cur).getAsInt();
+                cur = lower(ret);
+                return ret;
+            }
+            public void remove() {removeIfPresent(pre);}
+        };
+    }
+    public PrimitiveIterator.OfInt descendingIterator() {return iterator(first());}
+    public PrimitiveIterator.OfInt descendingIteratorFromKthElement(int k) {return descendingIterator(kthElement(k));}
+    public PrimitiveIterator.OfInt descendingIteratorFromCeilingElement(int element) {return descendingIterator(ceiling(element));}
+    public PrimitiveIterator.OfInt descendingIteratorFromHigherElement(int element) {return descendingIterator(higher(element));}
+    public PrimitiveIterator.OfInt descendingIteratorFromFloorElement(int element) {return descendingIterator(floor(element));}
+    public PrimitiveIterator.OfInt descendingIteratorFromLowerElement(int element) {return descendingIterator(lower(element));}
 
-    public PrimitiveIterator.OfInt iterator() {return new AscendingSetIterator();}
-
-    public PrimitiveIterator.OfInt descendingIterator() {return new DescendingSetIterator();}
-
-    class AscendingSetIterator implements PrimitiveIterator.OfInt {
-        int it = size() > 0 ? first() : Integer.MAX_VALUE;
-        final int max = size() > 0 ? last() : Integer.MIN_VALUE;
-        public boolean hasNext() {return it <= max;}
-        public int nextInt() {
-            int ret = it;
-            it = it == max ? Integer.MAX_VALUE : higher(it);
-            return ret;
+    /**
+     * Returns an array containing all of the elements in this set in the ascending order.
+     * @return an array containing all of the elements in this set in the ascending order
+     */
+    public int[] toArray() {
+        int[] res = new int[size()];
+        PrimitiveIterator.OfInt iter = iterator();
+        for (int i = 0; iter.hasNext();) {
+            while (iter.hasNext()) res[i++] = iter.nextInt();
         }
-    }
-    class DescendingSetIterator implements PrimitiveIterator.OfInt {
-        int it = size() > 0 ? last() : Integer.MIN_VALUE;
-        final int min = size() > 0 ? first() : Integer.MAX_VALUE;
-        public boolean hasNext() {return it >= min;}
-        public int nextInt() {
-            int ret = it;
-            it = it == min ? Integer.MIN_VALUE : lower(it);
-            return ret;
-        }
-    }
-    private static class OutOfRangeException extends RuntimeException {
-        private static final long serialVersionUID = 1437290411625321824L;
-        private OutOfRangeException() {super();}
-        private OutOfRangeException(@SuppressWarnings("SameParameterValue") String s) {super(s);}
+        return res;
     }
 }

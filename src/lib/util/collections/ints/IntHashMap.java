@@ -36,6 +36,10 @@ public class IntHashMap<V> {
         }
         return false;
     }
+    public boolean containsKey(int key) {
+        IntOrderedMap<V> mp = tab[hash(key) & mask];
+        return mp != null && mp.containsKey(key);
+    }
     public V get(int key) {
         int index = hash(key) & mask;
         if (tab[index] == null) return null;

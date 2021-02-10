@@ -12,7 +12,7 @@ import java.io.UncheckedIOException;
  */
 public class FastScanner implements AutoCloseable {
     private final ByteBuffer tokenBuf = new ByteBuffer();
-    private final InputStream in;
+    public final InputStream in;
     private final byte[] rawBuf = new byte[1 << 14];
     private int ptr = 0;
     private int buflen = 0;

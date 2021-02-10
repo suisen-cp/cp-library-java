@@ -1,5 +1,6 @@
 package lib.util.collections.longs;
 
+import java.util.Arrays;
 import java.util.NoSuchElementException;
 import java.util.OptionalLong;
 
@@ -65,13 +66,13 @@ public class LongPriorityQueue {
         }
     }
 
-    void grow() {
+    final void grow() {
         long[] newQue = new long[que.length << 1];
         System.arraycopy(que, 0, newQue, 0, que.length);
         que = newQue;
     }
 
-    void addUsingComparator(long e) {
+    final void addUsingComparator(long e) {
         int i = size;
         while (i > 1) {
             int p = i >> 1;
@@ -81,7 +82,7 @@ public class LongPriorityQueue {
         que[i] = e;
     }
 
-    void addDescending(long e) {
+    final void addDescending(long e) {
         int i = size;
         while (i > 1) {
             int p = i >> 1;
@@ -91,7 +92,7 @@ public class LongPriorityQueue {
         que[i] = e;
     }
 
-    void addAscending(long e) {
+    final void addAscending(long e) {
         int i = size;
         while (i > 1) {
             int p = i >> 1;
@@ -123,7 +124,7 @@ public class LongPriorityQueue {
         }
     }
 
-    long pollUsingComparator() {
+    final long pollUsingComparator() {
         long ret = que[1];
         long e = que[size--];
         int i = 1;
@@ -147,7 +148,7 @@ public class LongPriorityQueue {
         return ret;
     }
 
-    long pollDescending() {
+    final long pollDescending() {
         long ret = que[1];
         long e = que[size--];
         int i = 1;
@@ -171,7 +172,7 @@ public class LongPriorityQueue {
         return ret;
     }
 
-    long pollAscending() {
+    final long pollAscending() {
         long ret = que[1];
         long e = que[size--];
         int i = 1;
@@ -216,16 +217,31 @@ public class LongPriorityQueue {
         size = 0;
     }
 
-    @Override
-    public String toString() {
-        return toString(1, 0);
+    final int capacity() {
+        return que.length;
     }
 
-    private String toString(int k, int space) {
-        String s = "";
-        if ((k << 1 | 1) <= size) s += toString(k << 1 | 1, space + 3) + "\n";
-        s += " ".repeat(space) + que[k];
-        if ((k << 1 | 0) <= size) s += "\n" + toString(k << 1 | 0, space + 3);
-        return s;
+    final void ensureCapacity(int capacity) {
+        if (capacity() < capacity) {
+            que = Arrays.copyOf(que, Math.max(capacity, capacity() << 1));
+        }
+    }
+
+    @Override
+    public String toString() {
+        LongPriorityQueue copy;
+        if (comparator == null) {
+            copy = new LongPriorityQueue(descending);
+        } else {
+            copy = new LongPriorityQueue(comparator);
+        }
+        copy.que = que.clone();
+        copy.size = size;
+        long[] a = new long[size];
+        int idx = 0;
+        while (copy.size > 0) {
+            a[idx++] = copy.removeFirst();
+        }
+        return Arrays.toString(a);
     }
 }
