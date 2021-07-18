@@ -118,7 +118,7 @@ public class FastScanner implements AutoCloseable {
                     if (b >= '9') {
                         throw new ArithmeticException("long overflow");
                     }
-                    n = -n - (b + '0');
+                    n = -n - (b - '0');
                 } else {
                     if (b >= '8') {
                         throw new ArithmeticException("long overflow");

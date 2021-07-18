@@ -6,12 +6,12 @@ import lib.datastructure.longs.LongSegmentTree;
 
 public class Combination {
     /**
-     * Calculates C(N,0),C(N,1),...,C(N,N) in O(N(logN)^2/loglogN)
+     * Calculates C(N,i) for i = 0, ..., N in O(N(logN)^2/loglogN)
      * @param N <= 10^5
      * @param M <= 10^9
-     * @return Array of [C(N,0),C(N,1),...,C(N,N)]
+     * @return C(N,i) for i = 0, ..., N
      */
-    public static long[] solve2(final int N, final long M) {
+    public static long[] combinationsAnyMod2(final int N, final long M) {
         final ModArithmetic MA = new ModArithmeticBarrett(M);
         Eratosthenes.Result sieve = Eratosthenes.solve(N);
         int[] divisors = sieve.divisors();
@@ -59,12 +59,12 @@ public class Combination {
 
     static final int MAX_PRIME_FACTOR_NUM = 9;
     /**
-     * Calculates [C(N,0),C(N,1),...,C(N,N)] in O(N(loglogM)(logloglogM)) time.
+     * Calculates C(N,i) for i = 0, ..., N in O(N(loglogM)(logloglogM)) time.
      * @param N <= 10^5
      * @param M <= 10^9
-     * @return long[]{C(N,0),C(N,1),...,C(N,N)}
+     * @return C(N,i) for i = 0, ..., N
      */
-    public static long[] solve(final int N, final long M) {
+    public static long[] combinationsAnyMod(final int N, final long M) {
         if (N == 0) return new long[]{M == 1 ? 0 : 1};
         final ModArithmetic MA = new ModArithmeticBarrett(M);
         int[] maxPrimeFactor = new int[N + 1];
@@ -165,5 +165,28 @@ public class Combination {
             for (p >>= 1; p > 0; p >>= 1) data[p] = MA.mul(data[p << 1 | 0], data[p << 1 | 1]);
         }
         long prodAll() {return data[1];}
+    }
+
+    // ! Lucas's Theorem !
+
+    public static int mod2(long n, long r) {
+        if (n < 0 || r < 0) return 0;
+        return (n | r) == n ? 1 : 0;
+    }
+
+    public static int mod2(int n, int r) {
+        if (n < 0 || r < 0) return 0;
+        return (n | r) == n ? 1 : 0;
+    }
+
+    /**
+     * @return C(n, i) mod 2 for i = 0, ..., n
+     */
+    public static int[] combinationMod2(int n) {
+        int[] binom = new int[n + 1];
+        for (int i = n;; i &= n) {
+            binom[i] = 1;
+            if (--i < 0) return binom;
+        }
     }
 }

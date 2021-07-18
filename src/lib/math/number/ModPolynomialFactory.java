@@ -184,7 +184,7 @@ public final class ModPolynomialFactory {
         while (tlz < f.length && f[tlz] == 0) {
             tlz++;
         }
-        if (tlz * k >= f.length) {
+        if (tlz * k > deg) {
             return new long[]{0};
         }
         long[] g = Arrays.copyOfRange(f, tlz, f.length);
@@ -399,7 +399,7 @@ public final class ModPolynomialFactory {
             return _multipointEval(C, xs);
         }
         public long getCoef(int deg) {
-            return C[deg];
+            return deg < C.length ? C[deg] : 0;
         }
         public long[] getCoefs(){
             return C;

@@ -50,11 +50,11 @@ public class Combinatrics {
     public static long[] bernoulliNumber(int n, ModPolynomialFactory mpf) {
         long[] c = mpf.create(Arrays.copyOfRange(mpf.ma.factorialInv(n + 1), 1, n + 2)).inv(n).getCoefs();
         long fac = 1;
-        for (int i = 2; i <= n; i++) {
+        for (int i = 2; i < c.length; i++) {
             fac = mpf.ma.mul(fac, i);
             c[i] = mpf.ma.mul(c[i], fac);
         }
-        return mpf.create(c).getCoefs();
+        return mpf.create(c).expand(n).getCoefs();
     }
 
     public static long[] bellNumber(int n, ModPolynomialFactory mpf) {

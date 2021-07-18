@@ -1,6 +1,5 @@
 package lib.util.itertools;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.PrimitiveIterator;
@@ -87,16 +86,20 @@ public class IterUtil {
     }
 
     private static <V> Iterable<V> concatIterables(Iterator<? extends Iterable<V>> iterIterator) {
-        return () -> new Iterator<V>(){
-            Iterator<V> it = emptyIterator();
-            public boolean hasNext() {
-                while (!it.hasNext()) {
-                    if (!iterIterator.hasNext()) return false;
-                    it = iterIterator.next().iterator();
-                }
-                return true;
+        return new Iterable<V>() {
+            public Iterator<V> iterator() {
+                return new Iterator<V>() {
+                    Iterator<V> it = emptyIterator();
+                    public boolean hasNext() {
+                        while (!it.hasNext()) {
+                            if (!iterIterator.hasNext()) return false;
+                            it = iterIterator.next().iterator();
+                        }
+                        return true;
+                    }
+                    public V next() { return it.next(); }
+                };
             }
-            public V next() {return it.next();}
         };
     }
 
@@ -185,41 +188,5 @@ public class IterUtil {
             public boolean hasNext() {return !seen;}
             public double nextDouble() {seen = true; return e;}
         };
-    }
-}
-
-class IterConcatenatorTest {
-    public static void main(String[] args) {
-        verify();
-        performanceTest();
-    }
-
-    public static void verify() {
-
-    }
-
-    public static void performanceTest() {
-        final int N = 10000000;
-        ArrayList<ArrayList<Integer>> ls = new ArrayList<>();
-        for (int i = 0; i < N / 4; i++) {
-            ArrayList<Integer> l = new ArrayList<>();
-            l.add(i);
-            ls.add(l);
-        }
-        ArrayList<Integer> lm = new ArrayList<>();
-        for (int i = N / 4; i < N / 2; i++) {
-            lm.add(i);
-        }
-        ArrayList<Integer> lr = new ArrayList<>();
-        for (int i = N / 2; i < N; i++) {
-            lm.add(i);
-        }
-        long s = 0;
-        long beg = System.nanoTime();
-        for (Integer e : IterUtil.concatIterables(IterUtil.concatIterables(ls), lm, lr)) s += e;
-        long end = System.nanoTime();
-        System.out.println("time : " + (end - beg) + " ns");
-        // => time : 1110529100 ns
-        System.out.println(s);
     }
 }

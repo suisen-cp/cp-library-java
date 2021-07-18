@@ -9,7 +9,7 @@ import lib.util.itertools.IterUtil;
 import lib.util.pair.IntEntry;
 import lib.util.pair.Pair;
 
-public class IntRandomizedBinarySearchTree<V> extends IntEntry<V> implements Iterable<IntEntry<V>> {
+public class IntRandomizedBinarySearchTree<V> extends IntEntry<V> {
     IntRandomizedBinarySearchTree<V> l, r;
     int size;
     IntRandomizedBinarySearchTree(int key, V val) {super(key, val); this.size = 1;}
@@ -19,6 +19,24 @@ public class IntRandomizedBinarySearchTree<V> extends IntEntry<V> implements Ite
     }
 
     private static final Random rnd = new Random();
+
+    static int getKthKey(IntRandomizedBinarySearchTree<?> t, int k) {
+        int c = IntRandomizedBinarySearchTree.size(t.l);
+        if (k < c) return getKthKey(t.l, k);
+        if (k == c) return t.key;
+        return getKthKey(t.r, k - c - 1);
+    }
+
+    static int setKthKey(IntRandomizedBinarySearchTree<?> t, int k, int newKey) {
+        int c = IntRandomizedBinarySearchTree.size(t.l);
+        if (k < c) return setKthKey(t.l, k, newKey);
+        if (k == c) {
+            int oldKey = t.key;
+            t.key = newKey;
+            return oldKey;
+        }
+        return setKthKey(t.r, k - c - 1, newKey);
+    }
 
     static <V> IntRandomizedBinarySearchTree<V> merge(IntRandomizedBinarySearchTree<V> l, IntRandomizedBinarySearchTree<V> r) {
         if (l == null) return r;
@@ -60,16 +78,30 @@ public class IntRandomizedBinarySearchTree<V> extends IntEntry<V> implements Ite
         IntRandomizedBinarySearchTree<V> r = split(p.snd, 1).snd;
         return merge(l, r);
     }
+    static <V> IntRandomizedBinarySearchTree<V> eraseRange(IntRandomizedBinarySearchTree<V> t, int from, int to) {
+        Pair<IntRandomizedBinarySearchTree<V>, IntRandomizedBinarySearchTree<V>> p = split(t, from);
+        IntRandomizedBinarySearchTree<V> l = p.fst;
+        IntRandomizedBinarySearchTree<V> r = split(p.snd, to - from).snd;
+        return merge(l, r);
+    }
     static int size(IntRandomizedBinarySearchTree<?> nd) {return nd == null ? 0 : nd.size;}
 
-    public Iterator<IntEntry<V>> iterator() {
+    static <V> Iterator<IntEntry<V>> iterator(IntRandomizedBinarySearchTree<V> nd) {
+        return nd == null ? IterUtil.emptyIterator() : nd.iterator();
+    }
+
+    static PrimitiveIterator.OfInt keyIterator(IntRandomizedBinarySearchTree<?> nd) {
+        return nd == null ? IterUtil.emptyIntIterator() : nd.keyIterator();
+    }
+
+    private Iterator<IntEntry<V>> iterator() {
         Iterator<IntEntry<V>> it = List.<IntEntry<V>>of(this).iterator();
         if (l != null) it = IterUtil.concatIterators(l.iterator(), it);
         if (r != null) it = IterUtil.concatIterators(it, r.iterator());
         return it;
     }
 
-    public PrimitiveIterator.OfInt keyIterator() {
+    private PrimitiveIterator.OfInt keyIterator() {
         PrimitiveIterator.OfInt it = IterUtil.ofIntIterator(key);
         if (l != null) it = IterUtil.concatIntIterators(l.keyIterator(), it);
         if (r != null) it = IterUtil.concatIntIterators(it, r.keyIterator());

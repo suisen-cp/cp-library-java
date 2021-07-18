@@ -31,23 +31,22 @@ public final class ConvolutionAnyMod extends Convolution {
     private static final ConvolutionNTTPrime CNV1 = new ConvolutionNTTPrime(MA1);
     private static final ConvolutionNTTPrime CNV2 = new ConvolutionNTTPrime(MA2);
 
-    public ConvolutionAnyMod(ModArithmetic MA) {super(MA);}
+    private final long d;
+    public ConvolutionAnyMod(ModArithmetic MA) {
+        super(MA);
+        this.d = MA.mul(MOD0, MOD1);
+    }
 
     public long[] convolution(long[] a, long[] b, int deg) {
         int n = Math.min(a.length, deg + 1);
         int m = Math.min(b.length, deg + 1);
-        if (n <= 0 || m <= 0) return new long[]{};
-        if (Math.max(n, m) <= THRESHOLD_NAIVE_CONVOLUTION) {
-            return convolutionNaive(a, b, n, m);
-        }
+        if (n + m - 1 <= THRESHOLD_NAIVE_CONVOLUTION) return convolutionNaive(a, b, n, m);
         long[] c0 = CNV0.convolution(a, b, deg);
         long[] c1 = CNV1.convolution(a, b, deg);
         long[] c2 = CNV2.convolution(a, b, deg);
         int k = Math.min(c0.length, deg + 1);
         long[] ret = new long[k];
-        for (int i = 0; i < k; i++) {
-            ret[i] = garner(c0[i], c1[i], c2[i]);
-        }
+        for (int i = 0; i < k; i++) ret[i] = garner(c0[i], c1[i], c2[i]);
         return ret;
     }
 
@@ -55,8 +54,8 @@ public final class ConvolutionAnyMod extends Convolution {
     private static final long INV2 = MA2.inv(MA2.mul(MOD0, MOD1));
 
     private long garner(long c0, long c1, long c2) {
-        long v = MA1.mul(MA1.sub(c1, c0), INV1);
+        long v = MA1.mul(MA1.mod(c1 - c0), INV1);
         long u = MA2.mul(MA2.mod(c2 - c0 - MOD0 * v), INV2);
-        return MA.mod(c0 + MA.mul(MOD0, v) + MA.mul(MOD0, MOD1, u));
+        return MA.mod(c0 + MOD0 * v + d * u);
     }
 }

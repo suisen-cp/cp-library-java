@@ -23,6 +23,10 @@ public class LongHashMap<V> {
         int hash = (int) (key ^ (key >>> 32));
         return hash ^ (hash >>> 16);
     }
+    public boolean containsKey(long key) {
+        LongOrderedMap<V> t = tab[hash(key) & mask];
+        return t != null && t.containsKey(key);
+    }
     public void put(long key, V val) {
         int index = hash(key) & mask;
         if (tab[index] == null) tab[index] = new LongOrderedMap<V>();

@@ -54,6 +54,20 @@ public class MaxFlow {
         return flow(s, t, INF);
     }
 
+    public void clear() {
+        for (int u = 0; u < n; u++) {
+            int k = dig.deg(u);
+            for (int i = 0; i < k; i++) {
+                CapEdge e = dig.getEdge(u, i);
+                int v = e.to;
+                CapEdge r = g[v][e.rev];
+                long flow = r.cap;
+                e.cap += flow;
+                r.cap -= flow;
+            }
+        }
+    }
+
     public long flow(int s, int t, long flowLimit) {
         rangeCheck(s, 0, n);
         rangeCheck(t, 0, n);

@@ -1,6 +1,9 @@
 package lib.tree;
 
 import java.util.Arrays;
+import java.util.function.IntConsumer;
+
+import lib.util.function.IntBiConsumer;
 
 public class TreeUtil {
     public static int[] path(Tree t, int u, int v) {
@@ -102,5 +105,33 @@ public class TreeUtil {
             }
         }
         return new long[]{maxDep, maxDepV};
+    }
+
+    public static void nonRecursionalDFS(Tree t, int s, IntConsumer visit, IntBiConsumer transition, IntConsumer leave) {
+        int n = t.n;
+        boolean[] vis = new boolean[n];
+        vis[s] = true;
+        long[] stack = new long[n];
+        int ptr = 0;
+        stack[ptr++] = (long) s << 32;
+        while (ptr > 0) {
+            long p = stack[--ptr];
+            int u = (int) (p >>> 32);
+            int i = (int) (p & 0xffff_ffffL);
+            if (i == 0) {
+                visit.accept(u);
+            }
+            if (i < t.getEdges(u).length) {
+                stack[ptr++] = ++p;
+                int v = t.getEdges(u)[i];
+                if (!vis[v]) {
+                    stack[ptr++] = (long) v << 32;
+                    vis[v] = true;
+                    transition.accept(u, v);
+                }
+            } else {
+                leave.accept(u);
+            }
+        }
     }
 }

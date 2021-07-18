@@ -16,4 +16,5 @@ public final class IntXorBases {
     }
     public boolean isExpressible(int e) {return solve(e) == 0;}
     public void appendBase(int e) {if ((e = solve(e)) != 0) v.add(e);}
+    public int size() { return v.size(); }
 }

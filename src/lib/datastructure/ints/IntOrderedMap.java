@@ -65,5 +65,5 @@ public class IntOrderedMap<V> implements Iterable<IntEntry<V>> {
     public int size() {return IntRandomizedBinarySearchTree.size(root);}
     public boolean isEmpty() {return size() == 0;}
     public void clear() {this.root = null;}
-    public Iterator<IntEntry<V>> iterator() {return isEmpty() ? IterUtil.emptyIterator() : root.iterator();}
+    public Iterator<IntEntry<V>> iterator() {return IntRandomizedBinarySearchTree.iterator(root);}
 }

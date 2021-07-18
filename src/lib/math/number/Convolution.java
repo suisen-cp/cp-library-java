@@ -3,11 +3,11 @@ package lib.math.number;
 import lib.base.Const;
 
 public abstract class Convolution {
-    static final int THRESHOLD_NAIVE_CONVOLUTION = 150;
+    static final int THRESHOLD_NAIVE_CONVOLUTION = 128;
     public final ModArithmetic MA;
-    public Convolution(ModArithmetic MA) {this.MA = MA;}
+    public Convolution(ModArithmetic MA) { this.MA = MA; }
     public abstract long[] convolution(long[] a, long[] b, int deg);
-    public final long[] convolution(long[] a, long[] b) {return convolution(a, b, Const.IINF);}
+    public final long[] convolution(long[] a, long[] b) { return convolution(a, b, Const.IINF); }
     public final long[] convolutionNaive(long[] a, long[] b, int n, int m) {
         int k = n + m - 1;
         long[] ret = new long[k];

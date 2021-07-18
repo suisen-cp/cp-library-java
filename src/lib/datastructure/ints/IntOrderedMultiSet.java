@@ -8,18 +8,14 @@ public class IntOrderedMultiSet implements Iterable<Integer> {
     private static final Object DUMMY = new Object();
 
     IntRandomizedBinarySearchTree<Object> root;
-    static int kthElement(IntRandomizedBinarySearchTree<?> t, int k) {
-        int c = IntRandomizedBinarySearchTree.size(t.l);
-        if (k < c) return kthElement(t.l, k);
-        if (k == c) return t.key;
-        return kthElement(t.r, k - c - 1);
-    }
     public int kthElement(int k) {
         if (k < 0 || k >= size()) throw new IndexOutOfBoundsException();
-        return kthElement(root, k);
+        return IntRandomizedBinarySearchTree.getKthKey(root, k);
     }
     public int lowerElement(int key) {return kthElement(ltCount(key) - 1);}
+    public int floorElement(int key) {return kthElement(leqCount(key) - 1);}
     public int higherElement(int key) {return kthElement(leqCount(key));}
+    public int ceilingElement(int key) {return kthElement(ltCount(key));}
     public int first() {return kthElement(0);}
     public int last() {return kthElement(size() - 1);}
     public void add(int key) {root = IntRandomizedBinarySearchTree.insert(root, leqCount(root, key), key, DUMMY);}
@@ -32,6 +28,21 @@ public class IntOrderedMultiSet implements Iterable<Integer> {
             return true;
         }
         return false;
+    }
+    public int removeRange(int fromElement, int toElement) {
+        return removeRangeIndex(ltCount(fromElement), ltCount(toElement));
+    }
+    public boolean removeKthElement(int k) {
+        if (k < 0 || k >= size()) return false;
+        root = IntRandomizedBinarySearchTree.erase(root, k);
+        return true;
+    }
+    public int removeRangeIndex(int fromIndex, int toIndex) {
+        int l = Math.max(fromIndex, 0);
+        int r = Math.min(toIndex, size());
+        if (l >= r) return 0;
+        root = IntRandomizedBinarySearchTree.eraseRange(root, l, r);
+        return r - l;
     }
     public boolean contains(int key) {
         IntRandomizedBinarySearchTree<Object> t = root;
@@ -52,10 +63,12 @@ public class IntOrderedMultiSet implements Iterable<Integer> {
         if (key <= t.key) return ltCount(t.l, key);
         return ltCount(t.r, key) + IntRandomizedBinarySearchTree.size(t.l) + 1;
     }
-    public int ltCount(int key) {return ltCount(root, key);}
-    public int count(int key) {return leqCount(key) - ltCount(key);}
-    public int size() {return IntRandomizedBinarySearchTree.size(root);}
-    public boolean isEmpty() {return size() == 0;}
-    public void clear() {this.root = null;}
-    public PrimitiveIterator.OfInt iterator() {return isEmpty() ? IterUtil.emptyIntIterator() : root.keyIterator();}
+    public int ltCount(int key) { return ltCount(root, key); }
+    public int geqCount(int key) { return size() - ltCount(key); }
+    public int gtCount(int key) { return size() - leqCount(key); }
+    public int count(int key) { return leqCount(key) - ltCount(key); }
+    public int size() { return IntRandomizedBinarySearchTree.size(root); }
+    public boolean isEmpty() { return size() == 0; }
+    public void clear() { this.root = null; }
+    public PrimitiveIterator.OfInt iterator() { return IntRandomizedBinarySearchTree.keyIterator(root); }
 }

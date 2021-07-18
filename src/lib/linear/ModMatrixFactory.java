@@ -150,7 +150,7 @@ public final class ModMatrixFactory {
         }
         ModMatrix(long[][] A) {
             this.N = A.length;
-            this.M = A[0].length;
+            this.M = this.N == 0 ? 0 : A[0].length;
             this.A = new long[N][M];
             for (int i = 0; i < N; i++) for (int j = 0; j < M; j++) {
                 this.A[i][j] = MA.mod(A[i][j]);

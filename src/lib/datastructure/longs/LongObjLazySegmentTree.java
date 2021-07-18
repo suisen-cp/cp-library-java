@@ -4,6 +4,8 @@ import java.util.function.BinaryOperator;
 import java.util.function.LongBinaryOperator;
 import java.util.function.LongPredicate;
 
+import lib.util.function.ObjLongToLongFunction;
+
 @SuppressWarnings("PointlessBitwiseExpression")
 public class LongObjLazySegmentTree<F> {
 
@@ -15,11 +17,6 @@ public class LongObjLazySegmentTree<F> {
     @FunctionalInterface
     public interface FunMergerWidth<Func> {
         Func apply(Func func, int w);
-    }
-
-    @FunctionalInterface
-    public interface ObjLongToLongFunction<Func> {
-        long apply(Func func, long x);
     }
 
     final int MAX;
